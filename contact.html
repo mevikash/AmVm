@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+  The above 2 meta tags *must* come first in the <head>
+  to consistently ensure proper document rendering.
+  Any other head element should come *after* these tags.
+ -->
+<title>Vikash</title>
+<!-- Set the base URL for all relative URLs within the document -->
+<base href="#">
+
+<!--
+  Allows control over where resources are loaded from.
+  Place as early in the <head> as possible, as the tag  
+  only applies to resources that are declared after it.
+-->
+
+<!-- Short description of the document (limit to 150 characters) -->
+<!-- This content *may* be used as a part of search engine results. -->
+<meta name="description" content="a minimalistic jekyll theme for academics">
+
+<!-- Control the behavior of search engine crawling and indexing -->
+<meta name="robots" content="index,follow"><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+
+<!-- Verify website ownership -->
+<meta name="google-site-verification" content=""><!-- Google Search Console -->
+<meta name="yandex-verification" content=""><!-- Yandex Webmasters -->
+<meta name="msvalidate.01" content=""><!-- Bing Webmaster Center -->
+<meta name="alexaVerifyID" content=""><!-- Alexa Console -->
+<meta name="p:domain_verify" content=""><!-- Pinterest Console-->
+<meta name="norton-safeweb-site-verification" content=""><!-- Norton Safe Web -->
+
+<!-- Allows control over how referrer information is passed -->
+<meta name="referrer" content="no-referrer">
+
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=true">
+
+<!-- Completely opt out of DNS prefetching by setting to "off" -->
+<meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- Geo tags -->
+<!-- meta name="ICBM" content="latitude, longitude"-->
+<!-- meta name="geo.position" content="latitude;longitude"-->
+<!-- meta name="geo.region" content="country[-state]"><Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
+<!-- meta name="geo.placename" content="city/town"><eg. content="New York City" -->
+
+<!-- Link to an external CSS file -->
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Courgette&family=Lobster&family=Pacifico&family=Yellowtail&family=Noto+Sans+JP:wght@400;900&family=Poppins:wght@500&family=Righteous&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/main.css">
+<!-- BootStrap CDN --> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<script src="https://kit.fontawesome.com/32a2b2a489.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> 
+
+<!--  GIT TALK CDN  for comment system -->
+<!--
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> -->
+
+
+<!-- Provides information about an author or another person -->
+<link rel="me" href="mailto:developer.tbutler@gmail.com">
+<link rel="me" href="sms:+">
+
+<!-- Open Search -->
+<!-- link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title" -->
+
+<!-- Feeds -->
+<!-- link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS" -->
+<!-- link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3" -->
+
+<!-- For IE 10 and below -->
+<!-- Place favicon.ico in the root directory - no tag necessary -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon-16x16.png">
+<link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+
+<meta property="fb:app_id" content="">
+<meta property="og:url" content="/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:image" content="">
+<meta property="og:image:alt" content="">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:url" content="/contact.html">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="">
+<meta name="twitter:image:alt" content="">
+
+<!-- Used for adding in-document CSS -->
+
+
+
+<!-- JavaScript & No-JavaScript tags -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!--
+<script>
+    $(document).ready(function() {
+        $(".toast").toast('show');
+    });
+</script> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+<noscript>
+  <!-- No JS alternative -->
+</noscript>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg glowing-border mb-4" style="font-family:Poppins;background-color:#10292e;">
+      <a class="navbar-brand" href="/index.html"><h4 style="font-family:Noto Sans JP;font-weight:600;color:#149f98;">Vikash Meghwal</h4></a>
+      <button class="navbar-toggler text-black" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-caret-down"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            
+                  <li class="nav-item">
+                      <a href="about.html" class="nav-link" style="font-family:Poppins;color:#149f98;">About</a>
+                  </li>
+            
+                  <li class="nav-item">
+                      <a href="publications.html" class="nav-link" style="font-family:Poppins;color:#149f98;">Publications</a>
+                  </li>
+            
+                  <li class="nav-item">
+                      <a href="blog.html" class="nav-link" style="font-family:Poppins;color:#149f98;">Blog</a>
+                  </li>
+            
+                  <li class="nav-item">
+                      <a href="/assets/pdf/vitae.pdf" class="nav-link" style="font-family:Poppins;color:#149f98;">Vitae</a>
+                  </li>
+            
+                  <li class="nav-item">
+                      <a href="contact.html" class="nav-link" style="font-family:Poppins;color:#149f98;">Contact</a>
+                  </li>
+            
+        </ul>
+        <ul class="navbar-nav  justify-content-end">
+          <li class="nav-item">
+            
+    <!-- Displays Social Media Icons based on _config.yml settings -->
+    <span style="color:#CCCCCC;">
+        <i> &nbsp;&nbsp; </i>
+        
+            <a class="social-link" href="https://twitter.com/daneil_radcliff">
+            <span style="color: #CCCCCC;">
+                <i class="fab fa-twitter-square fa-lg"></i></a>
+            </span>
+        
+        
+            <a href="https://github.com/meevikash">
+            <span style="color: #CCCCCC;">
+                <i class="fab fa-github-square fa-lg"></i></a>
+            </span>
+        
+        
+            <a href="https://www.linkedin.com/in/vikash-meghwal/">
+            <span style="color: #CCCCCC;">
+                <i class="fab fa-linkedin fa-lg"></i></a>
+            </span>
+        
+        
+        
+            <a href="https://stackoverflow.com/users/15331943/mevikash">
+            <span style="color: #CCCCCC;">
+                <i class="fab fa-stack-overflow fa-lg"></i></a>
+            </span>
+        
+        
+        
+            <a href="https://keybase.io/mevikash">
+            <span style="color: #CCCCCC;">
+                <i class="fab fa-keybase"></i></a>
+            </span>
+         
+        <i> &nbsp;&nbsp; </i>
+    </span>
+    
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      
+      <div class="card border-0">
+          <div class="card-body">
+            <p class="card-text">
+                
+<div class="blogcard card-2 mb-4 mt-4" style="width: 100%;">
+  <div class="card-body">
+    <h1 class="card-title text-center" style="font-size:36px;font-weight:700;"></h1>
+    <p><p>Feel free to reach out to me on <a href="https://twitter.com/daneil_radcliff" class="highlighted">Twitter</a> , <a href="https://www.linkedin.com/in/vikash-meghwal/" class="highlighted">Linkedin</a> , or <a href="https://keybase.io/mevikash" class="highlighted">Keybase</a>. You can also send me a message through the netlify form api below. If needed, you can use the button below to copy my public PGP key</p>
+ </p>
+    <!-- Target -->
+    
+    <input id="foo" style="width:50%;" class="text-muted" value="-----BEGIN PGP PUBLIC KEY BLOCK-----
+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
+=LKUz
+-----END PGP PUBLIC KEY BLOCK-----
+">
+    <!-- Trigger -->
+    <button class="btn" data-clipboard-target="#foo">
+        <i class="far fa-copy" alt="Copy PGP clipboard"></i>
+        <span style="font-size:14px;">Copy</span>
+    </button>
+    
+  </div>
+</div>
+
+<div class="card shadow">
+  <div class="container">
+    <form action="https://formspree.io/f/mwkwddll" name="contact" method="POST" data-netlify="true">
+      <div class="mb-3 mt-5">
+        <input type="name" placeholder="Your Name" name="name" class="form-control" id="inputForName"/>
+      </div>
+      <div class="mb-3">
+        <textarea type="message" placeholder="Your Message" name="message" class="form-control" id="inputforMessage"></textarea>
+      </div>
+      <div class="mb-3">
+        <input type="email" placeholder="Your Email" name="email" class="form-control" id="inputforEmail">
+      </div>
+      <button type="submit" class="btn mb-4" style="background-color:;">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+<script>
+function startClippy(){
+    new ClipboardJS('.btn');
+}
+window.onload = startClippy;
+</script>
+            </p>
+            
+          </div>
+      </div>
+      
+    </div>
+    <div class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container">
+        <p class="navbar-text pull-left">© 2021 - Theme Edited By Vikash Meghwal, See it on
+            <a href="https://github.com/meevikash" target="_blank" >GitHub</a>
+        </p>
+        <p class="navbar-text pull-right">
+                <!-- Displays Social Media Icons based on _config.yml settings -->
+
+<span style="color: Black;">
+     
+  <a class="social-link" href="https://twitter.com/daneil_radcliff">
+        <span style="color: #000000;">
+            <i class="fab fa-twitter-square fa-lg"></i></a>
+        </span>
+    
+    
+        <a href="https://github.com/meevikash">
+        <span style="color: #000000;">
+            <i class="fab fa-github-square fa-lg"></i></a>
+        </span>
+    
+    
+        <a href="https://www.linkedin.com/in/vikash-meghwal/">
+        <span style="color: #000000;">
+            <i class="fab fa-linkedin fa-lg"></i></a>
+        </span>
+    
+    
+    
+        <a href="https://stackoverflow.com/users/15331943/mevikash">
+        <span style="color: #000000;">
+            <i class="fab fa-stack-overflow fa-lg"></i></a>
+        </span>
+    
+    
+    
+        <a href="https://keybase.io/mevikash">
+        <span style="color: #000000;">
+            <i class="fab fa-keybase"></i></a>
+        </span>
+     
+    <i> &nbsp;&nbsp; </i>
+</span>
+
+    </p>
+  </div>
+</div> 
+
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+</script>
+  </body>
+</html>
