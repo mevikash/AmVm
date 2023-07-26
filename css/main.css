@@ -110,6 +110,7 @@ a.highlighted:hover {
 .dumbarton-spacer-sm {
   padding-bottom: 5px;
   padding-top: 5px;
+  /* background-color: #0077b5; */
 }
 .publications {
   text-align: left;
