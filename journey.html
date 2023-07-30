@@ -106,7 +106,22 @@
 
 <!-- Used for adding in-document CSS -->
 
-
+<style>
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  .pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+  </style>
 
 <!-- JavaScript & No-JavaScript tags -->
 
@@ -508,7 +523,17 @@ National Highway 8, Ranoli GIDC, Dashrath, Vadodara, Gujarat 391750
   </p>
     <p class="navbar-text pull-right">
             <!-- Displays Social Media Icons based on _config.yml settings -->
-
+            <div class="pagination">
+              <a href="/about.html">&laquo;</a>
+          <a href="/AmVm">1</a>
+          <a href="/about.html">2</a>
+          <a class="active" href="#">Journey</a>
+          <!-- <a href="/journey.html">3</a> -->
+          <a href="/blog.html">4</a>
+          <a href="/vitae.html">5</a>
+          <a href="/contact.html">6</a>
+          <a href="/blog.html">&raquo;</a>
+            </div>
 <span style="color: Black;">
      
               <a class="social-link" href="https://twitter.com/daneil_radcliff">
