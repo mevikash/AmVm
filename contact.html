@@ -107,7 +107,22 @@
 <!-- Used for adding in-document CSS -->
 
 
-
+<style>
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  .pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+  </style>
 <!-- JavaScript & No-JavaScript tags -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -347,6 +362,17 @@ window.onload = startClippy;
           <a href="https://github.com/mevikash" target="_blank" >GitHub</a>
       </p>
         <p class="navbar-text pull-right">
+          <div class="pagination">
+            <a href="/vitae.html">&laquo;</a>
+        <a href="/AmVm">1</a>
+        <a href="/about.html">2</a>
+        <a href="/journey.html">3</a>
+        <a href="/blog.html">4</a>
+        <a href="/vitae.html">5</a>
+        <a class="active" href="#">Contact</a>
+        <!-- <a href="/contact.html">6</a> -->
+        <a href="/AmVm">&raquo;</a>
+          </div>
                 <!-- Displays Social Media Icons based on _config.yml settings -->
 
 <span style="color: Black;">
