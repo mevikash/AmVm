@@ -10,7 +10,7 @@
  -->
 <title>Vikash</title>
 <!-- Set the base URL for all relative URLs within the document -->
-<base href="">
+<base href="#">
 
 <!--
   Allows control over where resources are loaded from.
@@ -61,9 +61,8 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> 
 
 <!--  GIT TALK CDN  for comment system -->
-<!--
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> 
 
 
 <!-- Provides information about an author or another person -->
@@ -85,29 +84,109 @@
 <link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
 
 <meta property="fb:app_id" content="">
-<meta property="og:url" content="/blog.html">
+<meta property="og:url" content="https://dumbarton.netlify.app/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="I write about cyber threat intelligence">
-<meta property="og:image" content="">
-<meta property="og:image:alt" content="">
-<meta property="og:description" content="I write about cyber threat intelligence">
-<meta property="og:site_name" content="My Blog">
+<meta property="og:title" content="Dumbarton, a minimalistic jekyll theme for academics">
+<meta property="og:image" content="/assets/img/dumbarton.png">
+<meta property="og:image:alt" content="A minimalistic jekyll theme for academic">
+<meta property="og:description" content="a minimalistic jekyll theme for academics">
+<meta property="og:site_name" content="Dumbarton">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="">
+<meta property="article:author" content="John Doe">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@">
-<meta name="twitter:creator" content="@">
-<meta name="twitter:url" content="/blog.html">
-<meta name="twitter:title" content="I write about cyber threat intelligence">
-<meta name="twitter:description" content="I write about cyber threat intelligence">
-<meta name="twitter:image" content="">
-<meta name="twitter:image:alt" content="">
+<meta name="twitter:site" content="@tbutler0x90">
+<meta name="twitter:creator" content="@tbutler0x90">
+<meta name="twitter:url" content="https://dumbarton.netlify.app/">
+<meta name="twitter:title" content="a minimalistic jekyll theme for academics">
+<meta name="twitter:description" content="a minimalistic jekyll theme for academics">
+<meta name="twitter:image" content="/assets/img/dumbarton.png">
+<meta name="twitter:image:alt" content="A minimalistic jekyll theme for academic">
 
 <!-- Used for adding in-document CSS -->
 
 
+
+<!-- JavaScript & No-JavaScript tags -->
+
+<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/styles/monokai-sublime.min.css">
+<script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/languages/go.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!--
+<script>
+    $(document).ready(function() {
+        $(".toast").toast('show');
+    });
+</script> -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  'config'
+</script>
 <style>
+  .icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
   .pagination a {
     color: black;
     float: left;
@@ -120,114 +199,46 @@
     background-color: dodgerblue;
     color: white;
   }
-  
+  .nav-item {
+        display: inline-block;
+        margin-right: 15px; /* Adjust the value to increase or decrease the gap */
+    }
+    .nav-link {
+        font-family: Poppins;
+        color: #0000FF; /* Blue color */
+        text-decoration: none; /* Remove underline */
+    }
+    .nav-link:hover {
+        color: #0000CC; /* Darker blue for hover effect */
+    }
   .pagination a:hover:not(.active) {background-color: #ddd;}
   </style>
-<!-- JavaScript & No-JavaScript tags -->
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-<!--
-<script>
-    $(document).ready(function() {
-        $(".toast").toast('show');
-    });
-</script> -->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
-
-<noscript>
-  <!-- No JS alternative -->
-</noscript>
   <body>
     
-    <nav class="navbar navbar-expand-lg glowing-border mb-4" style="font-family:Poppins;background-color:#10292e;">
-      <a class="navbar-brand" href="/AmVm"><h4 style="font-family:Noto Sans JP;font-weight:600;color:#149f98;">Vikash Meghwal</h4></a>
-      <button class="navbar-toggler text-black" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-caret-down"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            
-                  <li class="nav-item">
-                      <a href="about.html" class="nav-link" style="font-family:Poppins;color:#149f98;">About</a>
-                  </li>
-            
-                  <li class="nav-item">
-                      <a href="journey.html" class="nav-link" style="font-family:Poppins;color:#149f98;">Journey</a>
-                  </li>
-            
-                  <li class="nav-item">
-                      <a href="blog.html" class="nav-link" style="font-family:Poppins;color:#149f98;">Blog</a>
-                  </li>
-            
-                  <li class="nav-item">
+<nav class="navbar navbar-expand-lg glowing-border mb-4" style="font-family:Poppins;background-color:#10292e;">
+  <a class="navbar-brand" href="#"><h4 style="font-family:Noto Sans JP;font-weight:600;color:#149f98;">Vikash Meghwal</h4></a>
+    <ul class="navbar-nav mr-auto">
+        
+      <ul class="nav" style="padding: 0; list-style: none; margin: 0;">
+        <li class="nav-item">
+            <a href="about.html"style="font-family:Noto Sans JP;font-weight:600;color:#149f98;"  class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+            <a href="journey.html" style="font-family:Noto Sans JP;font-weight:600;color:#149f98;" class="nav-link">Journey</a>
+        </li>
+        <li class="nav-item">
+            <a href="blog.html" style="font-family:Noto Sans JP;font-weight:600;color:#149f98;" class="nav-link">Blog</a>
+        </li>
+        <li class="nav-item">
+            <a href="vitae.html" style="font-family:Noto Sans JP;font-weight:600;color:#149f98;" class="nav-link">Vitae</a>
+        </li>
+        <li class="nav-item">
+            <a href="contact.html" style="font-family:Noto Sans JP;font-weight:600;color:#149f98;" class="nav-link">Contact</a>
+        </li>
+    </ul>
 
-                      <a href="vitae.html" class="nav-link" style="font-family:Poppins;color:#149f98;">Vitae</a>
-
-                  </li>
-
-                  <!-- <li class="nav-item">
-
-                    <a href="tags.html" class="nav-link" style="font-family:Poppins;color:#149f98;">Tags</a>
-    
-                  </li> -->
-            
-                  <li class="nav-item">
-                      <a href="contact.html" class="nav-link" style="font-family:Poppins;color:#149f98;">Contact</a>
-                  </li>
-            
-        </ul>
-        <ul class="navbar-nav  justify-content-end">
-          <li class="nav-item">
-            
-    <!-- Displays Social Media Icons based on _config.yml settings -->
-    <span style="color:#CCCCCC;">
-        <i> &nbsp;&nbsp; </i>
-        
-            <a class="social-link" href="https://twitter.com/daneil_radcliff">
-            <span style="color: #CCCCCC;">
-                <i class="fab fa-twitter-square fa-lg"></i></a>
-            </span>
-        
-        
-            <a href="https://github.com/mevikash">
-            <span style="color: #CCCCCC;">
-                <i class="fab fa-github-square fa-lg"></i></a>
-            </span>
-        
-        
-            <a href="https://www.linkedin.com/in/vikash-meghwal/">
-            <span style="color: #CCCCCC;">
-                <i class="fab fa-linkedin fa-lg"></i></a>
-            </span>
-        
-        
-        
-            <a href="https://stackoverflow.com/users/15331943/mevikash">
-            <span style="color: #CCCCCC;">
-                <i class="fab fa-stack-overflow fa-lg"></i></a>
-            </span>
-        
-        
-            <a href="https://sites.google.com/view/mevikash/home">
-              <span style="color: #CCCCCC;">
-                  <i class="fab fa-google"></i></a>
-              </span>
-        
-            <a href="https://keybase.io/mevikash">
-            <span style="color: #CCCCCC;">
-                <i class="fab fa-keybase"></i></a>
-            </span>
-         
-        <i> &nbsp;&nbsp; </i>
-    </span>
-    
-          </li>
-        </ul>
-      </div>
-    </nav>
+  </div>
+</nav>
     <div class="container">
       
       <div class="card border-0">

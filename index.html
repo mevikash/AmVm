@@ -199,97 +199,44 @@
     background-color: dodgerblue;
     color: white;
   }
-  
+  .nav-item {
+        display: inline-block;
+        margin-right: 15px; /* Adjust the value to increase or decrease the gap */
+    }
+    .nav-link {
+        font-family: Poppins;
+        color: #0000FF; /* Blue color */
+        text-decoration: none; /* Remove underline */
+    }
+    .nav-link:hover {
+        color: #0000CC; /* Darker blue for hover effect */
+    }
   .pagination a:hover:not(.active) {background-color: #ddd;}
   </style>
   <body>
     
 <nav class="navbar navbar-expand-lg glowing-border mb-4" style="font-family:Poppins;background-color:#10292e;">
   <a class="navbar-brand" href="#"><h4 style="font-family:Noto Sans JP;font-weight:600;color:#149f98;">Vikash Meghwal</h4></a>
-  <button class="navbar-toggler text-black" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fas fa-caret-down"></i>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
         
-              <li class="nav-item">
-                  <a href="about.html" class="nav-link" style="font-family:Poppins;color:#149f98;">About</a>
-              </li>
-        
-              <li class="nav-item">
-                  <a href="journey.html" class="nav-link" style="font-family:Poppins;color:#149f98;">Journey</a>
-              </li>
-        
-              <li class="nav-item">
-                  <a href="blog.html" class="nav-link" style="font-family:Poppins;color:#149f98;">Blog</a>
-              </li>
-        
-              <li class="nav-item">
-
-                  <a href="vitae.html" class="nav-link" style="font-family:Poppins;color:#149f98;">Vitae</a>
-
-              </li>
-
-              <!-- <li class="nav-item">
-
-                <a href="tags.html" class="nav-link" style="font-family:Poppins;color:#149f98;">Tags</a>
-
-              </li> -->
-
-        
-              <li class="nav-item">
-                  <a href="contact.html" class="nav-link" style="font-family:Poppins;color:#149f98;">Contact</a>
-              </li>
-        
+      <ul class="nav" style="padding: 0; list-style: none; margin: 0;">
+        <li class="nav-item">
+            <a href="about.html"style="font-family:Noto Sans JP;font-weight:600;color:#149f98;"  class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+            <a href="journey.html" style="font-family:Noto Sans JP;font-weight:600;color:#149f98;" class="nav-link">Journey</a>
+        </li>
+        <li class="nav-item">
+            <a href="blog.html" style="font-family:Noto Sans JP;font-weight:600;color:#149f98;" class="nav-link">Blog</a>
+        </li>
+        <li class="nav-item">
+            <a href="vitae.html" style="font-family:Noto Sans JP;font-weight:600;color:#149f98;" class="nav-link">Vitae</a>
+        </li>
+        <li class="nav-item">
+            <a href="contact.html" style="font-family:Noto Sans JP;font-weight:600;color:#149f98;" class="nav-link">Contact</a>
+        </li>
     </ul>
-    <ul class="navbar-nav  justify-content-end">
-      <li class="nav-item">
-        
-<!-- Displays Social Media Icons based on _config.yml settings -->
-<span style="color:#CCCCCC;">
-    <i> &nbsp;&nbsp; </i>
-    
-        <a class="social-link" href="https://twitter.com/daneil_radcliff">
-        <span style="color: #CCCCCC;">
-            <i class="fab fa-twitter-square fa-lg"></i></a>
-        </span>
-    
-    
-        <a href="https://github.com/mevikash">
-        <span style="color: #CCCCCC;">
-            <i class="fab fa-github-square fa-lg"></i></a>
-        </span>
-    
-    
-        <a href="https://www.linkedin.com/in/vikash-meghwal/">
-        <span style="color: #CCCCCC;">
-            <i class="fab fa-linkedin fa-lg"></i></a>
-        </span>
-    
-    
-    
-        <a href="https://stackoverflow.com/users/15331943/mevikash">
-        <span style="color: #CCCCCC;">
-            <i class="fab fa-stack-overflow fa-lg"></i></a>
-        </span>
-    
 
-        <a href="https://sites.google.com/view/mevikash/home">
-        <span style="color: #CCCCCC;">
-            <i class="fab fa-google"></i></a>
-        </span>    
-    
-        <a href="https://keybase.io/mevikash">
-        <span style="color: #CCCCCC;">
-            <i class="fab fa-keybase"></i></a>
-        </span>
-
-     
-    <i> &nbsp;&nbsp; </i>
-</span>
-
-      </li>
-    </ul>
   </div>
 </nav>
 
@@ -322,7 +269,8 @@
       <div class="card-body animate__animated animate__fadeInRight"">
       
         <p ><h3 id="hi-im-dumbarton-">Hi, I’m Vikash 👋</h3>
-<p>Hello, I'm Vikash, a student in my final year of university. I love developing and building websites and web-based programmes. I can't wait to learn more about myself. In the near future, I'd like to have my own personal lab since I enjoy performing experiments, synthesizing chemicals and compounds, and performing chemical reactions.</p>
+<p>Hello, Hello! Hi, I am Vikash, Dual degree BS-MS student in Chemical Science at IIT Kanpur, pursuing an interdisciplinary research focus at the intersection of Physical Chemistry, Semiconductor Physics, and Materials Science. Skilled in computational techniques, spectroscopy methods (AFM, STM, XPS), and data analysis for probing material properties at the atomic level. Passionate about leveraging cutting-edge technologies to drive innovation in scientific research.<br>
+Additionally, experienced in full-stack web development using modern frameworks like React, Electron, Node.js, and Angular. Adept at building dynamic and responsive user interfaces, as well as developing robust back-end services and applications.</p>
 
 
         
@@ -333,11 +281,11 @@
     <li class="media">
       
       <div class="media-body">
-        <h5 style="font-family:Noto Sans JP;font-size:18px;">Indian Institute of Technology, Kanpur</h5>
-        <p style="font-family:Noto Sans JP;font-size:15px;;"><i>BS-MS Chemistry </i></p>
+        <h5 style="font-family:Noto Sans JP;font-size:18px;">Indian Institute of Technology Kanpur</h5>
+        <p style="font-family:Noto Sans JP;font-size:15px;;"><i>BS-MS Dual Degree in Chemistry </i></p>
         
       </div>
-      <img src="https://www.iitk.ac.in/new/images/page-images/logo/redlogo.jpg" class="mr-3" alt="...">
+      <img src="https://www.iitk.ac.in/new/images/page-images/logo/redlogo.jpg" class="mr-3" alt="..." style="width: 100px; height: auto;">
     </li>
     
   </ul>
@@ -357,7 +305,13 @@
   <div class="card-header" style="background-color:#10292e;">
     <ul class="nav nav-tabs card-header-tabs" id="test-list" role="tablist">
       
+
         
+      <li class="nav-item">
+        <a class="nav-link shadow-none" id="" href="#master" role="tab" aria-controls="master" aria-selected="true" style="font-family:Poppins;color:#149f98;"> Masters Project</a>
+      </li>
+    
+
           <li class="nav-item">
             <a class="nav-link shadow-none" id="" href="#publications" role="tab" aria-controls="publications" aria-selected="true" style="font-family:Poppins;color:#149f98;"> SURGE </a>
           </li>
@@ -380,26 +334,48 @@
   </div>
    <div class="card-body">          
     <div class="tab-content mt-3">
-            <div class="tab-pane active overflow-auto" id="publications" role="tabpanel">
-              <p><a herf=""><B>SURGE Poster Presentation 2023-24</B></a></p>
-              <p><i>Mentor Prof. Pratik Sen, Biophysical Chemistry Research Group, Dept. of Chemistry, IIT Kanpur</i></p>
-              <a href="https://drive.google.com/file/d/1Z07siQkft9fcxqaNl3tsP0iKHGp1YJmu/view?usp=drive_link" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">POSTER</a>
-              <a href="https://drive.google.com/file/d/1lpNIAyR6mvB8sZXn-2Gh7PRRLiypmQvd/view?usp=sharing" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Report</a>
-              <a href="https://drive.google.com/file/d/1wLIyi-6msscI3T3u-E5toYcEsSJuQBY1/view?usp=sharing" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Certificate</a>
-              <a href="https://drive.google.com/file/d/1MeuqwIDSoyljZl-p-w9yQC5SNCfwmDbr/view?usp=sharing" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Inaugural Event SURGE 1</a>
-              <a href="https://drive.google.com/file/d/1veZYnTvya-nSsIfiMEhDPwH1BeDoNAt2/view?usp=sharing" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Inaugural Event SURGE 2</a>
-              <div class="media mt-2">
-                <div class="media-body">
-                  Title: Elucidation of the Structure and Dynamics of Synergistic Mixed Solvent Systems.
-                  <p>Learning Work: This research project focuses on investigating the structure and dynamics of synergistic mixed solvent systems through distillation, NMR spectroscopy, and data analysis. Strong analytical skills, effective communication, and collaborative approach to research.</p>
-                  
-                </div>
-              </div class="tab-pane active overflow-auto">
-              <img src="assets\pdf\Vikash Poster_page-0001.jpg" alt="Poster" width="100%" 100%, height="auto">
-            </div>
+      <div class="tab-pane active overflow-auto" id="master" role="tabpanel">
+        <p><a herf=""><B>Master's Project</B></a></p>
+        <p><i>Mentor Prof. Thiruvancheril G Gopakumar, Molecular Functional Materials Research Group, Dept. of Chemistry, IIT Kanpur</i></p>
+        <a href="assets/pdf/Poster Final.pdf" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">POSTER</a>
+        <div class="media mt-2">
+          <div class="media-body">
+            Title: Enhancing the Electronic-Coupling and Band Gap Tunability in Ferrocenyl Molecular Ultra-Thin Film by Pd & Cu Doping.
+            <p>
+              We worked on developing an ultra-thin molecular film using drop casting method where dopants are introduced at specific ligand sites. We formed semi-conducting SMONs with metals on highly
+              oriented pyrolytic graphite (HOPG) surface at ambient conditions.
+              Also Analyzed the Conductive AFM on the Surface of Two ferrocene (Fc) functionalized molecules,
+              3-ferrocenyl propanoic acid (FcC3) and 5-ferrocenyl pentadienoic acid (FcC5) or TCPBA (1,2,4,5-
+              Tetrakis (4-carboxyphenyl) benzene). Used Igor Pro, Agilent AFM, WSxM5,& Origin.
+              </p>
             
-          
-        
+          </div>
+        </div class="tab-pane active overflow-auto">
+        <img src="assets/pdf/Master Poster.jpeg" alt="Poster" width="100%" 100%, height="auto">
+      </div>
+
+
+
+      <div class="tab-pane overflow-auto" id="publications" role="tabpanel">
+        <p><a herf=""><B>SURGE Poster Presentation 2023-24</B></a></p>
+        <p><i>Mentor Prof. Pratik Sen, Biophysical Chemistry Research Group, Dept. of Chemistry, IIT Kanpur</i></p>
+        <a href="https://drive.google.com/file/d/1Z07siQkft9fcxqaNl3tsP0iKHGp1YJmu/view?usp=drive_link" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">POSTER</a>
+        <a href="https://drive.google.com/file/d/1lpNIAyR6mvB8sZXn-2Gh7PRRLiypmQvd/view?usp=sharing" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Report</a>
+        <a href="https://drive.google.com/file/d/1wLIyi-6msscI3T3u-E5toYcEsSJuQBY1/view?usp=sharing" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Certificate</a>
+        <a href="https://drive.google.com/file/d/1MeuqwIDSoyljZl-p-w9yQC5SNCfwmDbr/view?usp=sharing" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Inaugural Event SURGE 1</a>
+        <a href="https://drive.google.com/file/d/1veZYnTvya-nSsIfiMEhDPwH1BeDoNAt2/view?usp=sharing" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Inaugural Event SURGE 2</a>
+        <div class="media mt-2">
+          <div class="media-body">
+            Title: Elucidation of the Structure and Dynamics of Synergistic Mixed Solvent Systems.
+            <p>Learning Work: This research project focuses on investigating the structure and dynamics of synergistic mixed solvent systems through distillation, NMR spectroscopy, and data analysis. Strong analytical skills, effective communication, and collaborative approach to research.</p>
+            
+          </div>
+        </div class="tab-pane active overflow-auto">
+        <img src="assets\pdf\Vikash Poster_page-0001.jpg" alt="Poster" width="100%" 100%, height="auto">
+      </div>
+      
+    
+  
             
             
           
