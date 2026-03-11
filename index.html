@@ -1,710 +1,694 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vikash Meghwal — Research Scientist & Materials Chemist</title>
-  <meta name="description" content="Vikash Meghwal — BS-MS graduate from IIT Kanpur in Chemical Science. Research Scientist specializing in Physical Chemistry, Material Science, and Semiconductor Physics.">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Vikash Meghwal">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Vikash Meghwal — Research Scientist">
-  <meta property="og:description" content="Materials Chemist | IIT Kanpur | Surface Science & Nanotechnology">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mevikash.github.io/AmVm/">
+<html>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+  The above 2 meta tags *must* come first in the <head>
+  to consistently ensure proper document rendering.
+  Any other head element should come *after* these tags.
+ -->
+<title>Vikash</title>
+<!-- Set the base URL for all relative URLs within the document -->
+<base href="#">
 
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon-16x16.png">
+<!--
+  Allows control over where resources are loaded from.
+  Place as early in the <head> as possible, as the tag  
+  only applies to resources that are declared after it.
+-->
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@400;700;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<!-- Short description of the document (limit to 150 characters) -->
+<!-- This content *may* be used as a part of search engine results. -->
+<meta name="description" content="a minimalistic jekyll theme for academics">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Control the behavior of search engine crawling and indexing -->
+<meta name="robots" content="index,follow"><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow"><!-- Google Specific -->
 
-  <!-- Portfolio CSS -->
-  <link rel="stylesheet" href="css/portfolio.css">
-</head>
-<body>
+<!-- Verify website ownership -->
+<meta name="google-site-verification" content=""><!-- Google Search Console -->
+<meta name="yandex-verification" content=""><!-- Yandex Webmasters -->
+<meta name="msvalidate.01" content=""><!-- Bing Webmaster Center -->
+<meta name="alexaVerifyID" content=""><!-- Alexa Console -->
+<meta name="p:domain_verify" content=""><!-- Pinterest Console-->
+<meta name="norton-safeweb-site-verification" content=""><!-- Norton Safe Web -->
 
-<!-- Background grid -->
-<div class="bg-grid"></div>
+<!-- Allows control over how referrer information is passed -->
+<meta name="referrer" content="no-referrer">
 
-<!-- Loader -->
-<div id="loader">
-  <div class="loader-ring"></div>
-</div>
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=true">
 
-<!-- Scroll to Top -->
-<button id="scroll-top" aria-label="Scroll to top">
-  <i class="fas fa-chevron-up"></i>
-</button>
+<!-- Completely opt out of DNS prefetching by setting to "off" -->
+<meta http-equiv="x-dns-prefetch-control" content="on">
 
-<!-- ===== NAVBAR ===== -->
-<nav id="navbar">
-  <a href="#hero" class="nav-logo">VM</a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#research">Research</a></li>
-    <li><a href="#publications">Publications</a></li>
-    <li><a href="#journey">Journey</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <button class="nav-hamburger" aria-label="Toggle menu">
-    <span></span><span></span><span></span>
-  </button>
+<!-- Geo tags -->
+<!-- meta name="ICBM" content="latitude, longitude"-->
+<!-- meta name="geo.position" content="latitude;longitude"-->
+<!-- meta name="geo.region" content="country[-state]"><Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
+<!-- meta name="geo.placename" content="city/town"><eg. content="New York City" -->
+
+<!-- Link to an external CSS file -->
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Courgette&family=Lobster&family=Pacifico&family=Yellowtail&family=Noto+Sans+JP:wght@400;900&family=Poppins:wght@500&family=Righteous&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/main.css">
+<!-- BootStrap CDN --> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<script src="https://kit.fontawesome.com/32a2b2a489.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> 
+
+<!--  GIT TALK CDN  for comment system -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> 
+
+
+<!-- Provides information about an author or another person -->
+<link rel="me" href="mailto:developer.tbutler@gmail.com">
+<link rel="me" href="sms:+">
+
+<!-- Open Search -->
+<!-- link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title" -->
+
+<!-- Feeds -->
+<!-- link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS" -->
+<!-- link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3" -->
+
+<!-- For IE 10 and below -->
+<!-- Place favicon.ico in the root directory - no tag necessary -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon-16x16.png">
+<link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+
+<meta property="fb:app_id" content="">
+<meta property="og:url" content="https://dumbarton.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dumbarton, a minimalistic jekyll theme for academics">
+<meta property="og:image" content="/assets/img/dumbarton.png">
+<meta property="og:image:alt" content="A minimalistic jekyll theme for academic">
+<meta property="og:description" content="a minimalistic jekyll theme for academics">
+<meta property="og:site_name" content="Dumbarton">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@tbutler0x90">
+<meta name="twitter:creator" content="@tbutler0x90">
+<meta name="twitter:url" content="https://dumbarton.netlify.app/">
+<meta name="twitter:title" content="a minimalistic jekyll theme for academics">
+<meta name="twitter:description" content="a minimalistic jekyll theme for academics">
+<meta name="twitter:image" content="/assets/img/dumbarton.png">
+<meta name="twitter:image:alt" content="A minimalistic jekyll theme for academic">
+
+<!-- Used for adding in-document CSS -->
+
+
+
+<!-- JavaScript & No-JavaScript tags -->
+
+<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/styles/monokai-sublime.min.css">
+<script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/languages/go.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!--
+<script>
+    $(document).ready(function() {
+        $(".toast").toast('show');
+    });
+</script> -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  'config'
+</script>
+<style>
+  .icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  .pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  .nav-item {
+        display: inline-block;
+        margin-right: 15px; /* Adjust the value to increase or decrease the gap */
+    }
+    .nav-link {
+        font-family: Poppins;
+        color: #0000FF; /* Blue color */
+        text-decoration: none; /* Remove underline */
+    }
+    .nav-link:hover {
+        color: #0000CC; /* Darker blue for hover effect */
+    }
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+  </style>
+  <body>
+    
+<nav class="navbar navbar-expand-lg glowing-border mb-4" style="font-family:Poppins;background-color:#10292e;">
+  <a class="navbar-brand" href="#"><h4 style="font-family:Noto Sans JP;font-weight:600;color:#149f98;">Vikash Meghwal</h4></a>
+    <ul class="navbar-nav mr-auto">
+        
+      <ul class="nav" style="padding: 0; list-style: none; margin: 0;">
+        <li class="nav-item">
+            <a href="about.html"style="font-family:Noto Sans JP;font-weight:600;color:#149f98;"  class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+            <a href="journey.html" style="font-family:Noto Sans JP;font-weight:600;color:#149f98;" class="nav-link">Journey</a>
+        </li>
+        <li class="nav-item">
+            <a href="blog.html" style="font-family:Noto Sans JP;font-weight:600;color:#149f98;" class="nav-link">Blog</a>
+        </li>
+        <li class="nav-item">
+            <a href="vitae.html" style="font-family:Noto Sans JP;font-weight:600;color:#149f98;" class="nav-link">Vitae</a>
+        </li>
+        <li class="nav-item">
+            <a href="contact.html" style="font-family:Noto Sans JP;font-weight:600;color:#149f98;" class="nav-link">Contact</a>
+        </li>
+    </ul>
+
+  </div>
 </nav>
 
-<!-- ===== HERO SECTION ===== -->
-<section id="hero">
-  <canvas id="particles-canvas"></canvas>
-  <div class="hero-content">
-    <div class="hero-text">
-      <div class="hero-greeting">👋 Hello, World</div>
-      <h1>I'm <span class="highlight">Vikash<br>Meghwal</span></h1>
-      <div class="hero-title">
-        <span style="color:var(--text-muted)">— </span>
-        <span id="typewriter" style="color:var(--primary);font-weight:600;"></span>
-        <span style="color:var(--primary);animation:pulse 1s step-end infinite;">|</span>
-      </div>
-      <p class="hero-desc">
-        BS-MS Dual Degree graduate from <strong style="color:var(--primary)">IIT Kanpur</strong> in Chemical Science. 
-        Currently a Senior Research Associate working on ferrocenyl molecular thin films, surface science, and nanotechnology.
-      </p>
-      <div class="hero-btns">
-        <a href="#research" class="btn-primary-custom">
-          <i class="fas fa-flask"></i> View Research
-        </a>
-        <a href="#contact" class="btn-outline-custom">
-          <i class="fas fa-envelope"></i> Get in Touch
-        </a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat-item">
-          <div class="stat-num"><span data-count="5" data-suffix="+">0</span></div>
-          <div class="stat-label">Years Research</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-num"><span data-count="1" data-suffix="">0</span></div>
-          <div class="stat-label">Publication</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-num"><span data-count="8" data-suffix=".94">0</span></div>
-          <div class="stat-label">MS CPI</div>
-        </div>
-      </div>
+    <div class="dumbarton-spacer-sm"></div>
+    <div class="icon-bar">
+      <a href="https://www.facebook.com/mevikashvira" class="facebook"><i class="fa fa-facebook"></i></a> 
+      <a href="https://twitter.com/daneil_radcliff" class="twitter"><i class="fa fa-twitter"></i></a> 
+      <a href="https://sites.google.com/view/mevikash/home" class="google"><i class="fa fa-google"></i></a> 
+      <a href="https://www.linkedin.com/in/vikash-meghwal/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      <!-- <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>  -->
     </div>
-    <div class="hero-image-area">
-      <div class="hero-avatar-wrapper">
-        <div class="orbit-ring"><div class="orbit-dot"></div></div>
-        <div class="orbit-ring"><div class="orbit-dot"></div></div>
-        <img class="hero-avatar" src="assets/img/avatar/cropped1.jpg" alt="Vikash Meghwal" onerror="this.src='https://ui-avatars.com/api/?name=Vikash+Meghwal&size=300&background=10292e&color=149f98&bold=true'">
-      </div>
+    <div class="container">
+      
+
+<!--  HELP TIPS SECTION  -->
+<!-- used only for develop mode, disable these in _config.yml with `help_tips: false` -->
+
+
+<!-- ABOUT ME SECTION -->
+<div class="card mx-auto border-0" style="position:relative;">
+  <div class="row">
+    <div class="col-md-4">
+      
+        <img src="assets\img\avatar\cropped1.jpg" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" alt="...">
+      
     </div>
-  </div>
-  <!-- Scroll indicator -->
-  <div style="position:absolute;bottom:30px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0.5;animation:fadeInUp 1s ease 2s forwards;">
-    <span style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted)">Scroll</span>
-    <div style="width:1px;height:40px;background:linear-gradient(to bottom,var(--primary),transparent);animation:float 2s ease infinite;"></div>
-  </div>
-</section>
+    <!-- EDUCATION SECTION -->
+    <div class="col-md-8">
+      
+      <div class="card-body animate__animated animate__fadeInRight"">
+      
+        <p ><h3 id="hi-im-dumbarton-">Hi, I’m Vikash 👋</h3>
+<p>Hello, Hello! Hi, I am Vikash, Dual degree BS-MS student in Chemical Science at IIT Kanpur, pursuing an interdisciplinary research focus at the intersection of Physical Chemistry, Semiconductor Physics, and Materials Science. Skilled in computational techniques, spectroscopy methods (AFM, STM, XPS), and data analysis for probing material properties at the atomic level. Passionate about leveraging cutting-edge technologies to drive innovation in scientific research.<br>
+Additionally, experienced in full-stack web development using modern frameworks like React, Electron, Node.js, and Angular. Adept at building dynamic and responsive user interfaces, as well as developing robust back-end services and applications.</p>
 
-<!-- ===== ABOUT SECTION ===== -->
-<section id="about">
-  <div class="section-header reveal">
-    <span class="section-tag">Who I Am</span>
-    <h2>About <span>Me</span></h2>
-    <div class="section-divider"></div>
-  </div>
-  <div class="about-grid">
-    <div class="about-left reveal-left">
-      <div class="about-img-wrapper glass-card" style="padding:0;overflow:hidden;">
-        <img src="assets/img/avatar/cropped1.jpg" alt="Vikash Meghwal" style="width:100%;display:block;" onerror="this.src='https://ui-avatars.com/api/?name=Vikash+Meghwal&size=400&background=10292e&color=149f98&bold=true'">
-      </div>
-      <div class="info-chips">
-        <div class="info-chip">
-          <i class="fas fa-graduation-cap"></i>
-          <span>IIT Kanpur, 2019–2024</span>
-        </div>
-        <div class="info-chip">
-          <i class="fas fa-map-marker-alt"></i>
-          <span>Ajmer, Rajasthan, India</span>
-        </div>
-        <div class="info-chip">
-          <i class="fas fa-briefcase"></i>
-          <span>Senior Research Associate</span>
-        </div>
-        <div class="info-chip">
-          <i class="fas fa-atom"></i>
-          <span>Materials & Surface Science</span>
-        </div>
-      </div>
-    </div>
-    <div class="about-right reveal-right">
-      <h3>Research Scientist &amp; <span style="color:var(--primary)">Materials Chemist</span></h3>
-      <p>
-        Hi! I'm Vikash Meghwal — a Dual Degree (BS-MS) graduate in Chemical Science from the 
-        <strong style="color:var(--primary)">Indian Institute of Technology Kanpur</strong> (2024). 
-        I hail from Ajmer, Rajasthan, and I'm passionate about interdisciplinary science at the 
-        frontier of chemistry and physics.
-      </p>
-      <p>
-        Currently, I'm working as a <strong style="color:var(--text-main)">Senior Research Associate</strong> at the 
-        Molecular Functional Materials Research Group, IIT Kanpur, where my project focuses on 
-        <em>"Enhancing the Electronic-Coupling and Band Gap Tunability in Ferrocenyl Molecular 
-        Ultra-Thin Film by Pd &amp; Cu Doping."</em>
-      </p>
-      <p>
-        My research intersects <strong style="color:var(--primary)">Physical Chemistry</strong>, 
-        <strong style="color:var(--primary)">Semiconductor Physics</strong>, and 
-        <strong style="color:var(--primary)">Materials Science</strong>. I'm skilled in advanced 
-        spectroscopic techniques (AFM, STM, XPS, NMR), computational modeling, and data analysis 
-        for probing material properties at the atomic level.
-      </p>
-      <p>
-        Beyond research, I have a keen passion for <strong style="color:var(--text-main)">web development</strong>, 
-        data science, Flutter/Dart, and building things that make science more accessible.
-      </p>
 
-      <div class="skills-grid">
-        <div class="skill-item">
-          <div class="skill-icon"><i class="fas fa-microscope"></i></div>
-          <div class="skill-name">AFM / STM</div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="92"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-icon"><i class="fas fa-wave-square"></i></div>
-          <div class="skill-name">XPS / NMR</div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="88"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-icon"><i class="fas fa-code"></i></div>
-          <div class="skill-name">Web Dev / Coding</div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="80"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
-          <div class="skill-name">Data Analysis</div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div>
-        </div>
+        
+           
+  <h5 class="card-title" style="font-family:Noto Sans JP;font-size:18px;">Education & Certifications</h5>
+  <ul class="list-unstyled">
+  
+    <li class="media">
+      
+      <div class="media-body">
+        <h5 style="font-family:Noto Sans JP;font-size:18px;">Indian Institute of Technology Kanpur</h5>
+        <p style="font-family:Noto Sans JP;font-size:15px;;"><i>BS-MS Dual Degree in Chemistry </i></p>
+        
       </div>
-
-      <div style="display:flex;gap:12px;margin-top:28px;flex-wrap:wrap;">
-        <a href="vitae.html" class="btn-primary-custom" style="font-size:0.85rem;padding:10px 22px;">
-          <i class="fas fa-file-pdf"></i> View CV / Vitae
-        </a>
-        <a href="https://github.com/mevikash" target="_blank" rel="noopener" class="btn-outline-custom" style="font-size:0.85rem;padding:10px 22px;">
-          <i class="fab fa-github"></i> GitHub
-        </a>
+      <img src="https://www.iitk.ac.in/new/images/page-images/logo/redlogo.jpg" class="mr-3" alt="..." style="width: 100px; height: auto;">
+    </li>
+    
+  </ul>
+        
       </div>
     </div>
   </div>
-</section>
+</div>
 
-<!-- ===== RESEARCH SECTION ===== -->
-<section id="research">
-  <div class="section-header reveal">
-    <span class="section-tag">What I Work On</span>
-    <h2>Research <span>Projects</span></h2>
-    <div class="section-divider"></div>
+<!-- style="font-family:Poppins;background-color:#10292e; -->
+
+<!-- HOME HIGHLIGHTS SECTION --> 
+<!--End highlights-->
+
+<div class="card mx-auto animate__animated animate__slideInUp animate__delay-1s glowing-border" style="max-width: 100%;">
+
+  <div class="card-header" style="background-color:#10292e;">
+    <ul class="nav nav-tabs card-header-tabs" id="test-list" role="tablist">
+      
+
+        
+      <li class="nav-item">
+        <a class="nav-link shadow-none" id="" href="#master" role="tab" aria-controls="master" aria-selected="true" style="font-family:Poppins;color:#149f98;"> Masters Project</a>
+      </li>
+    
+
+          <li class="nav-item">
+            <a class="nav-link shadow-none" id="" href="#publications" role="tab" aria-controls="publications" aria-selected="true" style="font-family:Poppins;color:#149f98;"> SURGE </a>
+          </li>
+        
+      
+<!--         
+          <li class="nav-item">
+              <a class="nav-link" id="" href="#courses" role="tab" aria-controls="courses" aria-selected="true" style="font-family:Poppins;color:#149f98;"> Coursework</a>
+          </li> -->
+        
+          <li class="nav-item">
+            <a class="nav-link" id="" href="#projects" role="tab" aria-controls="projects" aria-selected="true" style="font-family:Poppins;color:#149f98;"> Projects</a>
+          </li>
+          
+          <li class="nav-item">
+              <a class="nav-link" id="" href="#teaching" role="tab" aria-controls="teaching" aria-selected="true" style="font-family:Poppins;color:#149f98;"> Self Projects on Fortran</a>
+          </li>
+          
+    </ul>
   </div>
-  <div class="research-grid">
-
-    <div class="glass-card research-card reveal delay-1">
-      <span class="research-tag"><i class="fas fa-star" style="margin-right:5px;"></i>Current</span>
-      <h3>Ferrocenyl Molecular Ultra-Thin Films — Electronic Coupling &amp; Band Gap Tunability</h3>
-      <p>
-        Investigating Pd &amp; Cu doping in monolayer ferrocenyl films (FcC3, FcC5, TCPBA) on Au(111) surfaces. 
-        Using STM, AFM, and XPS to characterize electronic structure and band-gap properties at the nanoscale.
-      </p>
-      <p style="font-size:0.82rem;color:var(--primary);"><i class="fas fa-user-tie" style="margin-right:5px;"></i>Mentor: Prof. T. G. Gopakumar — Molecular Functional Materials Research Group, IIT Kanpur</p>
-      <div class="research-meta">
-        <a href="assets/pdf/Poster Final.pdf" class="meta-badge drive" target="_blank">
-          <i class="fas fa-file-image"></i> Poster
-        </a>
-        <a href="https://pubs.rsc.org/en/content/articlehtml/2025/tc/d4tc04978k" class="meta-badge pub" target="_blank" rel="noopener">
-          <i class="fas fa-external-link-alt"></i> RSC Paper
-        </a>
-      </div>
-    </div>
-
-    <div class="glass-card research-card reveal delay-2">
-      <span class="research-tag">SURGE 2023-24</span>
-      <h3>Structure &amp; Dynamics of Synergistic Mixed Solvent Systems</h3>
-      <p>
-        Elucidating molecular interactions in mixed solvent systems using NMR spectroscopy, vacuum distillation, 
-        and advanced data analysis. Focused on hydrophobicity's role in synergistic solvation.
-      </p>
-      <p style="font-size:0.82rem;color:var(--primary);"><i class="fas fa-user-tie" style="margin-right:5px;"></i>Mentor: Prof. Pratik Sen — Biophysical Chemistry Research Group, IIT Kanpur</p>
-      <div class="research-meta">
-        <a href="https://drive.google.com/file/d/1Z07siQkft9fcxqaNl3tsP0iKHGp1YJmu/view?usp=drive_link" class="meta-badge drive" target="_blank" rel="noopener">
-          <i class="fas fa-file-image"></i> Poster
-        </a>
-        <a href="https://drive.google.com/file/d/1lpNIAyR6mvB8sZXn-2Gh7PRRLiypmQvd/view?usp=sharing" class="meta-badge drive" target="_blank" rel="noopener">
-          <i class="fas fa-file-alt"></i> Report
-        </a>
-        <a href="https://drive.google.com/file/d/1wLIyi-6msscI3T3u-E5toYcEsSJuQBY1/view?usp=sharing" class="meta-badge pub" target="_blank" rel="noopener">
-          <i class="fas fa-certificate"></i> Certificate
-        </a>
-      </div>
-    </div>
-
-    <div class="glass-card research-card reveal delay-3">
-      <span class="research-tag">UG Research</span>
-      <h3>SARS-CoV-2 Membrane Fusion Mechanism</h3>
-      <p>
-        Studied SARS-CoV-2 fusion via an opportunistic membrane model, analyzing receptor binding and spike-protein 
-        priming mechanisms. Explored bio-nanoparticle interactions relevant to viral entry pathways.
-      </p>
-      <p style="font-size:0.82rem;color:var(--primary);"><i class="fas fa-user-tie" style="margin-right:5px;"></i>Supervisor: Dr. Nagma Praveen — Chemical Biology Lab, IIT Kanpur</p>
-      <div class="research-meta">
-        <a href="https://drive.google.com/file/d/1O_WLOCjUrk2lxf8hoPudE72otImcrTfd/view" class="meta-badge drive" target="_blank" rel="noopener">
-          <i class="fas fa-file-alt"></i> Report
-        </a>
-        <a href="https://drive.google.com/file/d/1x3yjxiMS74zc-3abvyi9bHXHj0D-bBFf/view" class="meta-badge drive" target="_blank" rel="noopener">
-          <i class="fas fa-desktop"></i> Slides
-        </a>
-      </div>
-    </div>
-
-    <div class="glass-card research-card reveal delay-4">
-      <span class="research-tag">UG Research</span>
-      <h3>Role of Hydrophobicity in Synergistic Solvation</h3>
-      <p>
-        Investigated how hydrophobicity drives synergistic behavior in mixed organic solvents. 
-        Techniques included purification of organic solvents, NMR spectroscopy, and vacuum distillation.
-      </p>
-      <p style="font-size:0.82rem;color:var(--primary);"><i class="fas fa-user-tie" style="margin-right:5px;"></i>Mentor: Prof. Pratik Sen — Biophysical Chemistry Research Group, IIT Kanpur</p>
-      <div class="research-meta">
-        <a href="https://home.iitk.ac.in/~psen/solution-chemistry.php" class="meta-badge drive" target="_blank" rel="noopener">
-          <i class="fas fa-external-link-alt"></i> Lab Page
-        </a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ===== PUBLICATIONS SECTION ===== -->
-<section id="publications">
-  <div class="section-header reveal">
-    <span class="section-tag">Peer-Reviewed Work</span>
-    <h2>Publications &amp; <span>Posters</span></h2>
-    <div class="section-divider"></div>
-  </div>
-  <div class="pub-list">
-
-    <div class="glass-card pub-item reveal">
-      <div class="pub-number">01</div>
-      <div class="pub-year">2025 · RSC Journal of Materials Chemistry C</div>
-      <h3>
-        <a href="https://pubs.rsc.org/en/content/articlehtml/2025/tc/d4tc04978k" target="_blank" rel="noopener">
-          Enhancing the electronic-coupling and conductivity of a monolayer film of ferrocenyl molecules by Pd and Cu doping
-        </a>
-      </h3>
-      <div class="pub-authors">Vikash Meghwal, <em>et al.</em></div>
-      <div class="pub-journal">Journal of Materials Chemistry C, Royal Society of Chemistry (RSC), 2025</div>
-      <div class="pub-links">
-        <a href="https://pubs.rsc.org/en/content/articlehtml/2025/tc/d4tc04978k" class="meta-badge pub" target="_blank" rel="noopener">
-          <i class="fas fa-external-link-alt"></i> View Paper
-        </a>
-        <a href="assets/pdf/Poster Final.pdf" class="meta-badge drive" target="_blank">
-          <i class="fas fa-file-image"></i> Research Poster
-        </a>
-      </div>
-    </div>
-
-    <div class="glass-card pub-item reveal">
-      <div class="pub-number">02</div>
-      <div class="pub-year">2023 · SURGE IIT Kanpur</div>
-      <h3>Elucidation of the Structure and Dynamics of Synergistic Mixed Solvent Systems</h3>
-      <div class="pub-authors">Vikash Meghwal, Mentor: Prof. Pratik Sen</div>
-      <div class="pub-journal">SURGE Summer Research Program, IIT Kanpur, 2023–24</div>
-      <div class="pub-links">
-        <a href="https://drive.google.com/file/d/1Z07siQkft9fcxqaNl3tsP0iKHGp1YJmu/view?usp=drive_link" class="meta-badge drive" target="_blank" rel="noopener">
-          <i class="fas fa-file-image"></i> Poster
-        </a>
-        <a href="https://drive.google.com/file/d/1lpNIAyR6mvB8sZXn-2Gh7PRRLiypmQvd/view?usp=sharing" class="meta-badge drive" target="_blank" rel="noopener">
-          <i class="fas fa-file-alt"></i> Report
-        </a>
-        <a href="https://drive.google.com/file/d/1wLIyi-6msscI3T3u-E5toYcEsSJuQBY1/view?usp=sharing" class="meta-badge pub" target="_blank" rel="noopener">
-          <i class="fas fa-certificate"></i> Certificate
-        </a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ===== JOURNEY / EDUCATION TIMELINE ===== -->
-<section id="journey">
-  <div class="section-header reveal">
-    <span class="section-tag">My Path</span>
-    <h2>Education <span>Journey</span></h2>
-    <div class="section-divider"></div>
-  </div>
-
-  <div class="timeline">
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-period"><i class="fas fa-circle-dot"></i> 2024 — Present</div>
-      <div class="glass-card timeline-card">
-        <h3>Senior Research Associate</h3>
-        <div class="inst"><i class="fas fa-university"></i> Molecular Functional Materials Research Group, IIT Kanpur</div>
-        <p>Working on enhancing electronic-coupling and band-gap tunability in ferrocenyl molecular ultra-thin films through Pd &amp; Cu doping.</p>
-        <span class="grade">Active Research Position</span>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-period"><i class="fas fa-circle-dot"></i> 2019 — 2024</div>
-      <div class="glass-card timeline-card">
-        <h3>BS-MS Dual Degree in Chemistry</h3>
-        <div class="inst"><i class="fas fa-university"></i> Indian Institute of Technology Kanpur</div>
-        <p>Five-year integrated Dual Degree program in Chemical Science with focus on Physical Chemistry, Materials Science, and Semiconductor Physics.</p>
-        <span class="grade">MS CPI: 8.94 &nbsp;|&nbsp; BS CPI: 7.10</span>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-period"><i class="fas fa-circle-dot"></i> 2017 — 2018</div>
-      <div class="glass-card timeline-card">
-        <h3>12th Grade (Senior Secondary)</h3>
-        <div class="inst"><i class="fas fa-school"></i> Lawrence and Mayo Public School, Ajmer</div>
-        <p>Central Board of Secondary Education (CBSE). Established in 1988, Makarwali, Ajmer, Rajasthan.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-period"><i class="fas fa-circle-dot"></i> 2016 — 2017</div>
-      <div class="glass-card timeline-card">
-        <h3>11th Grade</h3>
-        <div class="inst"><i class="fas fa-school"></i> G. R. Global Academy, Uttar Pradesh</div>
-        <p>Central Board of Secondary Education (CBSE). NCR, Phoolwati Nagar, Bishara N.T.P.C Dadri, Uttar Pradesh.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-period"><i class="fas fa-circle-dot"></i> Earlier</div>
-      <div class="glass-card timeline-card">
-        <h3>Secondary Education</h3>
-        <div class="inst"><i class="fas fa-school"></i> Bharti Public High School</div>
-        <p>Foundation in Science and Mathematics, building toward higher education in Chemistry.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ===== SKILLS SECTION ===== -->
-<section id="skills">
-  <div class="section-header reveal">
-    <span class="section-tag">Expertise</span>
-    <h2>Skills &amp; <span>Technologies</span></h2>
-    <div class="section-divider"></div>
-  </div>
-  <div class="skills-container">
-
-    <div class="glass-card skill-category reveal delay-1">
-      <div class="skill-category-title"><i class="fas fa-flask"></i> Spectroscopy</div>
-      <div class="skill-tags">
-        <span class="skill-tag">AFM</span>
-        <span class="skill-tag">STM</span>
-        <span class="skill-tag">XPS</span>
-        <span class="skill-tag">NMR</span>
-        <span class="skill-tag">UV-Vis</span>
-        <span class="skill-tag">IR Spectroscopy</span>
-        <span class="skill-tag">Raman</span>
-      </div>
-    </div>
-
-    <div class="glass-card skill-category reveal delay-2">
-      <div class="skill-category-title"><i class="fas fa-atom"></i> Materials Science</div>
-      <div class="skill-tags">
-        <span class="skill-tag">Nanotechnology</span>
-        <span class="skill-tag">Nanomaterials</span>
-        <span class="skill-tag">Thin Films</span>
-        <span class="skill-tag">Surface Science</span>
-        <span class="skill-tag">Semiconductors</span>
-        <span class="skill-tag">Polymers</span>
-        <span class="skill-tag">Self-Assembly</span>
-      </div>
-    </div>
-
-    <div class="glass-card skill-category reveal delay-3">
-      <div class="skill-category-title"><i class="fas fa-laptop-code"></i> Computing</div>
-      <div class="skill-tags">
-        <span class="skill-tag">Fortran</span>
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">MATLAB</span>
-        <span class="skill-tag">Data Analysis</span>
-        <span class="skill-tag">DFT Calculations</span>
-        <span class="skill-tag">Origin Pro</span>
-        <span class="skill-tag">GWYDDION</span>
-      </div>
-    </div>
-
-    <div class="glass-card skill-category reveal delay-4">
-      <div class="skill-category-title"><i class="fas fa-globe"></i> Web &amp; Development</div>
-      <div class="skill-tags">
-        <span class="skill-tag">HTML / CSS</span>
-        <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">Flutter</span>
-        <span class="skill-tag">Dart</span>
-        <span class="skill-tag">Kotlin</span>
-        <span class="skill-tag">Node.js</span>
-        <span class="skill-tag">Bootstrap</span>
-      </div>
-    </div>
-
-    <div class="glass-card skill-category reveal delay-5">
-      <div class="skill-category-title"><i class="fas fa-industry"></i> Industrial Chemistry</div>
-      <div class="skill-tags">
-        <span class="skill-tag">Perfumes &amp; Fragrances</span>
-        <span class="skill-tag">Vacuum Distillation</span>
-        <span class="skill-tag">Organic Synthesis</span>
-        <span class="skill-tag">Purification</span>
-        <span class="skill-tag">Chromatography</span>
-      </div>
-    </div>
-
-    <div class="glass-card skill-category reveal delay-1">
-      <div class="skill-category-title"><i class="fas fa-tools"></i> Lab Techniques</div>
-      <div class="skill-tags">
-        <span class="skill-tag">Sample Preparation</span>
-        <span class="skill-tag">Molecular Beam Epitaxy</span>
-        <span class="skill-tag">UHV Systems</span>
-        <span class="skill-tag">Electrochemistry</span>
-        <span class="skill-tag">Glovebox Operation</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ===== PROJECTS SECTION ===== -->
-<section id="projects">
-  <div class="section-header reveal">
-    <span class="section-tag">Academic &amp; Personal Work</span>
-    <h2>Selected <span>Projects</span></h2>
-    <div class="section-divider"></div>
-  </div>
-  <div class="projects-grid">
-
-    <div class="glass-card project-card reveal delay-1">
-      <div class="project-num">01</div>
-      <div class="project-icon"><i class="fas fa-butterfly"></i></div>
-      <h3>Butterfly Effect (Lorenz System)</h3>
-      <p>Solved the Lorenz system of ODEs using Euler Forward and Runge-Kutta 4 methods. Generated 3D animated plots and phase-space trajectories demonstrating chaotic behavior.</p>
-      <div class="project-tech">
-        <span class="tech-tag">Fortran</span>
-        <span class="tech-tag">Numerical Methods</span>
-        <span class="tech-tag">ODE</span>
-        <span class="tech-tag">3D Visualization</span>
-      </div>
-    </div>
-
-    <div class="glass-card project-card reveal delay-2">
-      <div class="project-num">02</div>
-      <div class="project-icon"><i class="fas fa-magnet"></i></div>
-      <h3>Ising Model Simulation</h3>
-      <p>Implemented Monte Carlo Ising model to simulate magnetic phase transitions. Computed Energy vs Temperature, heat capacity (Cv), and magnetic susceptibility (χ) dependencies.</p>
-      <div class="project-tech">
-        <span class="tech-tag">Fortran</span>
-        <span class="tech-tag">Monte Carlo</span>
-        <span class="tech-tag">Statistical Mechanics</span>
-      </div>
-    </div>
-
-    <div class="glass-card project-card reveal delay-3">
-      <div class="project-num">03</div>
-      <div class="project-icon"><i class="fas fa-paw"></i></div>
-      <h3>Prey–Predator Population Model</h3>
-      <p>Solved Lotka-Volterra differential equations using Euler's Forward method. Visualized population dynamics and time-evolution graphs showing cyclical prey-predator interactions.</p>
-      <div class="project-tech">
-        <span class="tech-tag">Fortran</span>
-        <span class="tech-tag">Euler Method</span>
-        <span class="tech-tag">Population Dynamics</span>
-      </div>
-    </div>
-
-    <div class="glass-card project-card reveal delay-4">
-      <div class="project-num">04</div>
-      <div class="project-icon"><i class="fas fa-integral"></i></div>
-      <h3>Numerical Integration Methods</h3>
-      <p>Comparative implementation of Gauss-Legendre Polynomial, Trapezoidal, and Simpson's Rules for numerical integration of specific mathematical functions.</p>
-      <div class="project-tech">
-        <span class="tech-tag">Fortran</span>
-        <span class="tech-tag">Gauss-Legendre</span>
-        <span class="tech-tag">Trapezoidal</span>
-        <span class="tech-tag">Simpson's Rule</span>
-      </div>
-    </div>
-
-    <div class="glass-card project-card reveal delay-5">
-      <div class="project-num">05</div>
-      <div class="project-icon"><i class="fas fa-globe"></i></div>
-      <h3>Personal Portfolio Website</h3>
-      <p>Designed and built this animated, interactive personal portfolio website using vanilla HTML, CSS, and JavaScript — featuring particles, scroll animations, and glassmorphism design.</p>
-      <div class="project-tech">
-        <span class="tech-tag">HTML5</span>
-        <span class="tech-tag">CSS3</span>
-        <span class="tech-tag">JavaScript</span>
-        <span class="tech-tag">Canvas API</span>
-      </div>
-    </div>
-
-    <div class="glass-card project-card reveal delay-1">
-      <div class="project-num">06</div>
-      <div class="project-icon"><i class="fas fa-vial"></i></div>
-      <h3>Ferrocenyl Film Characterization</h3>
-      <p>Complete characterization pipeline for ferrocenyl molecular films — from sample preparation and STM imaging to XPS analysis and electronic structure calculations.</p>
-      <div class="project-tech">
-        <span class="tech-tag">STM</span>
-        <span class="tech-tag">XPS</span>
-        <span class="tech-tag">DFT</span>
-        <span class="tech-tag">GWYDDION</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ===== CONTACT SECTION ===== -->
-<section id="contact">
-  <div class="section-header reveal">
-    <span class="section-tag">Let's Connect</span>
-    <h2>Get in <span>Touch</span></h2>
-    <div class="section-divider"></div>
-  </div>
-  <div class="contact-wrapper">
-    <div class="contact-left reveal-left">
-      <h3>Let's Talk Research, <span style="color:var(--primary)">Science, or Tech!</span></h3>
-      <p>
-        Whether you're interested in collaborating on research, discussing materials science, 
-        or just want to connect — feel free to reach out through any of the channels below.
-      </p>
-      <div class="contact-links">
-        <a href="mailto:vikashmeghwal@iitk.ac.in" class="contact-link">
-          <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
-          <div class="contact-link-text">
-            <span>Email</span>
-            <strong>vikashmeghwal@iitk.ac.in</strong>
+   <div class="card-body">          
+    <div class="tab-content mt-3">
+      <div class="tab-pane active overflow-auto" id="master" role="tabpanel">
+        <p><a herf=""><B>Master's Project</B></a></p>
+        <p><i>Mentor Prof. Thiruvancheril G Gopakumar, Molecular Functional Materials Research Group, Dept. of Chemistry, IIT Kanpur</i></p>
+        <a href="assets/pdf/Poster Final.pdf" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">POSTER</a>
+        <div class="media mt-2">
+          <div class="media-body">
+            Title: Enhancing the Electronic-Coupling and Band Gap Tunability in Ferrocenyl Molecular Ultra-Thin Film by Pd & Cu Doping.
+            <p>
+              We worked on developing an ultra-thin molecular film using drop casting method where dopants are introduced at specific ligand sites. We formed semi-conducting SMONs with metals on highly
+              oriented pyrolytic graphite (HOPG) surface at ambient conditions.
+              Also Analyzed the Conductive AFM on the Surface of Two ferrocene (Fc) functionalized molecules,
+              3-ferrocenyl propanoic acid (FcC3) and 5-ferrocenyl pentadienoic acid (FcC5) or TCPBA (1,2,4,5-
+              Tetrakis (4-carboxyphenyl) benzene). Used Igor Pro, Agilent AFM, WSxM5,& Origin.
+              </p>
+            
           </div>
-        </a>
-        <a href="https://www.linkedin.com/in/vikash-meghwal/" target="_blank" rel="noopener" class="contact-link">
-          <div class="contact-link-icon"><i class="fab fa-linkedin"></i></div>
-          <div class="contact-link-text">
-            <span>LinkedIn</span>
-            <strong>vikash-meghwal</strong>
-          </div>
-        </a>
-        <a href="https://github.com/mevikash" target="_blank" rel="noopener" class="contact-link">
-          <div class="contact-link-icon"><i class="fab fa-github"></i></div>
-          <div class="contact-link-text">
-            <span>GitHub</span>
-            <strong>mevikash</strong>
-          </div>
-        </a>
-        <a href="https://twitter.com/daneil_radcliff" target="_blank" rel="noopener" class="contact-link">
-          <div class="contact-link-icon"><i class="fab fa-twitter"></i></div>
-          <div class="contact-link-text">
-            <span>Twitter / X</span>
-            <strong>@daneil_radcliff</strong>
-          </div>
-        </a>
-        <a href="https://stackoverflow.com/users/15331943/mevikash" target="_blank" rel="noopener" class="contact-link">
-          <div class="contact-link-icon"><i class="fab fa-stack-overflow"></i></div>
-          <div class="contact-link-text">
-            <span>Stack Overflow</span>
-            <strong>mevikash</strong>
-          </div>
-        </a>
-        <a href="https://keybase.io/mevikash" target="_blank" rel="noopener" class="contact-link">
-          <div class="contact-link-icon"><i class="fab fa-keybase"></i></div>
-          <div class="contact-link-text">
-            <span>Keybase</span>
-            <strong>mevikash</strong>
-          </div>
-        </a>
-        <a href="https://sites.google.com/view/mevikash/home" target="_blank" rel="noopener" class="contact-link">
-          <div class="contact-link-icon"><i class="fab fa-google"></i></div>
-          <div class="contact-link-text">
-            <span>Google Sites</span>
-            <strong>mevikash</strong>
-          </div>
-        </a>
+        </div class="tab-pane active overflow-auto">
+        <img src="assets/pdf/Master Poster.jpeg" alt="Poster" width="100%" 100%, height="auto">
       </div>
-    </div>
-    <div class="reveal-right">
-      <div class="glass-card contact-form">
-        <h3><i class="fas fa-paper-plane" style="margin-right:8px;"></i>Send a Message</h3>
-        <form id="contact-form" action="https://formspree.io/f/mevikash" method="POST">
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Dr. Jane Smith" required>
+
+
+
+      <div class="tab-pane overflow-auto" id="publications" role="tabpanel">
+        <p><a herf=""><B>SURGE Poster Presentation 2023-24</B></a></p>
+        <p><i>Mentor Prof. Pratik Sen, Biophysical Chemistry Research Group, Dept. of Chemistry, IIT Kanpur</i></p>
+        <a href="https://drive.google.com/file/d/1Z07siQkft9fcxqaNl3tsP0iKHGp1YJmu/view?usp=drive_link" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">POSTER</a>
+        <a href="https://drive.google.com/file/d/1lpNIAyR6mvB8sZXn-2Gh7PRRLiypmQvd/view?usp=sharing" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Report</a>
+        <a href="https://drive.google.com/file/d/1wLIyi-6msscI3T3u-E5toYcEsSJuQBY1/view?usp=sharing" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Certificate</a>
+        <a href="https://drive.google.com/file/d/1MeuqwIDSoyljZl-p-w9yQC5SNCfwmDbr/view?usp=sharing" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Inaugural Event SURGE 1</a>
+        <a href="https://drive.google.com/file/d/1veZYnTvya-nSsIfiMEhDPwH1BeDoNAt2/view?usp=sharing" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Inaugural Event SURGE 2</a>
+        <div class="media mt-2">
+          <div class="media-body">
+            Title: Elucidation of the Structure and Dynamics of Synergistic Mixed Solvent Systems.
+            <p>Learning Work: This research project focuses on investigating the structure and dynamics of synergistic mixed solvent systems through distillation, NMR spectroscopy, and data analysis. Strong analytical skills, effective communication, and collaborative approach to research.</p>
+            
           </div>
-          <div class="form-group">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" placeholder="jane@university.edu" required>
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Research Collaboration / General Inquiry">
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Hi Vikash, I wanted to discuss..." required></textarea>
-          </div>
-          <button type="submit" class="btn-submit">
-            <i class="fas fa-paper-plane" style="margin-right:8px;"></i>Send Message
-          </button>
-        </form>
+        </div class="tab-pane active overflow-auto">
+        <img src="assets\pdf\Vikash Poster_page-0001.jpg" alt="Poster" width="100%" 100%, height="auto">
       </div>
-    </div>
-  </div>
-</section>
+      
+    
+  
+            
+            
+          
+        
+            
+            
+              <div class="tab-pane overflow-auto" id="teaching" role="tabpanel" aria-labelledby="teaching-tab">  
+                <p><i><a href="https://home.iitk.ac.in/~mainaks/">Project 1 :</a> Mentor Prof. Mainak Sadhukhan, Theoretical Chemistry Research Group, Dept. of Chemistry, IIT Kanpur. </i>
+                <a href="assets\fortran\Vikash Meghwal\Lorenz system- The Butter fly effect_Vikash _Meghwal_EF.rar" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Euler's Method</a>
+                <a href="assets\fortran\Vikash Meghwal\Lorenz system- The Butter fly effect_Vikash _Meghwal_R4.rar" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">R4 Method</a>
+              </p>
+                    <div class="list-group">
+                      <div class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
 
-<!-- ===== FOOTER ===== -->
-<footer id="footer">
-  <div class="footer-inner">
-    <div class="footer-logo">Vikash Meghwal</div>
-    <div class="footer-text">
-      © 2024 Vikash Meghwal · IIT Kanpur · Made with <span style="color:var(--accent)">♥</span>
-    </div>
-    <div class="footer-socials">
-      <a href="https://github.com/mevikash" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/vikash-meghwal/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://twitter.com/daneil_radcliff" target="_blank" rel="noopener" class="social-icon" aria-label="Twitter">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="https://stackoverflow.com/users/15331943/mevikash" target="_blank" rel="noopener" class="social-icon" aria-label="Stack Overflow">
-        <i class="fab fa-stack-overflow"></i>
-      </a>
-      <a href="https://keybase.io/mevikash" target="_blank" rel="noopener" class="social-icon" aria-label="Keybase">
-        <i class="fab fa-keybase"></i>
-      </a>
-    </div>
-  </div>
-</footer>
 
-<!-- Portfolio JS -->
-<script src="js/portfolio.js"></script>
-</body>
+
+                          <h5 class="mb-1"></h5>
+                            <div class="card-body">
+                              <!-- <h6 class="card-title text-center" style="font-size:26px;font-weight:700;">Prey and Predator using Euler's Forward</h6> -->
+                              <h3 class="card-title text-center" style="font-size:26px;font-weight:700;">ButterFly using Euler's Forward and Runge- Kutta 4 Method</h3>
+                            </div>
+                              <div class="row">
+                                
+                                <div class="col-md-4">
+                                    <!-- <img src="assets\fortran\Vikash Meghwal\plot3.png" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" width="100%" 100%, height="auto" alt="..."> -->
+                                    <img src="assets\fortran\Vikash Meghwal\plot1.png" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" alt="...">
+                                </div>
+                                
+                                <div class="col-md-4">
+                                  <!-- <img src="assets\fortran\Vikash Meghwal\plot4.png" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" width="100%" 100%, height="auto" alt="..."> -->
+                                  <img src="assets\fortran\Vikash Meghwal\plot2.png" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" alt="...">
+                              </div>
+                                
+                                <div class="col-md-4">
+                                  <!-- <img src="assets\fortran\Vikash Meghwal\plot4.png" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" width="100%" 100%, height="auto" alt="..."> -->
+                                  <!-- <img src="assets\fortran\Vikash Meghwal\plot2.png" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" alt="..."> -->
+                                  <iframe class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" src="assets\fortran\Vikash Meghwal\EF.mp4" width="100%" 100%, height="auto" allowfullscreen=""></iframe>
+                              </div>
+                            </div>
+                        </div>
+</div>
+                        <div>
+                        
+                          <p class="mb-1"> Lorenz system solved by Euler forward and Runge- Kutta 4 methods and comparing using 3D animated plot and also X-Z graph with appropriate given points and we see variation in 3d graph.</p>
+                      </div>
+                    </div>
+               
+                <p><i><a href="https://home.iitk.ac.in/~mainaks/">Project 2 :</a> </i>
+                <a href="assets\fortran\ISING MODEL\ISING MODEL.rar" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Ising Model</a>
+                <!-- <a href="assets\fortran\Vikash Meghwal\Lorenz system- The Butter fly effect_Vikash _Meghwal_R4.rar" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">R4 Method</a> -->
+              </p>
+                    <div class="list-group">
+                      <div class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1"></h5>
+                          <!-- <p>ButterFly</p> -->
+                          <!-- <small>08/30/2019 - 08/30/2020</small> -->
+                          <!-- <div class="blogcard  card-1 mb-4" style="width: 100%;" style="height: 50%"> -->
+                            <div class="card-body">
+                              <h6 class="card-title text-center" style="font-size:26px;font-weight:700;">Ising Model</h6>
+                            </div>
+                            <div class="card mx-auto border-0" style="position:relative;">
+                              <div class="row">
+                                
+                                <div class="col-md-4">
+                                    <img src="assets\fortran\ISING MODEL\output\First Image.png" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" width="100%" 100%, height="auto" alt="...">
+                                  <b>Initial Random Image</b> 
+                                   </div>
+                                
+                                <div class="col-md-4">
+                                  <img src="assets\fortran\ISING MODEL\output\Final Image.png" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" width="100%" 100%, height="auto" alt="...">
+                                  <b>Final after Stablizing Image</b> 
+                                   </div>
+                                
+                                <div class="col-md-4">
+                                  <img src="assets\fortran\ISING MODEL\output\Cv or Xm Vs temp.png" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" width="100%" 100%, height="auto" alt="...">
+                                  <b>Cv or Xm Vs Temperature</b> 
+                                   </div>
+
+                                <div class="col-md-4">
+                                  <img src="assets\fortran\ISING MODEL\output\Energy Vs temp.png" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" width="100%" 100%, height="auto" alt="...">
+                                  <b>Energy Vs Temperature</b> 
+                                   </div>
+                                
+                                <div class="col-md-4">
+                                  <img src="assets\fortran\ISING MODEL\output\Energy.png" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" width="100%" 100%, height="auto" alt="...">
+                                  <b>Energy</b> 
+                                   </div>
+                                
+                                <div class="col-md-4">
+                                  <img src="assets\fortran\ISING MODEL\output\f_Energy.png" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" width="100%" 100%, height="auto" alt="...">
+                                  <b>Final Energy </b> 
+                                </div>
+                              
+
+                            </div> 
+                              
+                            </div>
+                          <!-- </div> -->
+                        </div>
+                        <p class="mb-1"> Ising Model Stablizing Energy and Temperature dependencies and Cv or Xm Ploting</p>
+                        <small></small>
+                      </div>
+                    </div>
+
+                <p><i><a href="https://home.iitk.ac.in/~mainaks/">Project 3 :</a> </i>
+                <a href="assets\fortran\Vikash Meghwal\Prey and Predator_Vikash Meghwal_EF.rar" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Prey and Predator</a>
+                <!-- <a href="assets\fortran\Vikash Meghwal\Lorenz system- The Butter fly effect_Vikash _Meghwal_R4.rar" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">R4 Method</a> -->
+              </p>
+                    <div class="list-group">
+                      <div class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1"></h5>
+                          <!-- <p>ButterFly</p> -->
+                          <!-- <small>08/30/2019 - 08/30/2020</small> -->
+                          <!-- <div class="blogcard  card-1 mb-4" style="width: 100%;"> -->
+                            <div class="card-body">
+                              <h6 class="card-title text-center" style="font-size:26px;font-weight:700;">Prey and Predator using Euler's Forward</h6>
+                            </div>
+                            <!-- <div class="card mx-auto border-0" style="position:relative;"> -->
+                              <div class="row">
+                                
+                                <div class="col-md-4">
+                                  <!-- <div class="embed-responsive embed-responsive-16by9"></div> -->
+                                    <img src="assets\fortran\Vikash Meghwal\plot3.png" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" width="100%" 100%, height="auto" alt="...">
+                                </div>
+                                
+                                <div class="col-md-4">
+                                  <img src="assets\fortran\Vikash Meghwal\plot4.png" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" width="100%" 100%, height="auto" alt="...">
+                              </div></div> 
+                              
+                            <!-- </div> -->
+                          <!-- </div> -->
+                        </div>
+                        <p class="mb-1"> Prey and Predator method using Euler's Forward method and graph work of prey and predator also with time V/s population.</p>
+                        <small></small>
+                      </div>
+                    </div>
+
+                <p><i><a href="https://home.iitk.ac.in/~mainaks/">Project 4 :</a> </i>
+                <a href="assets\fortran\Gauss,Trapezodial, Simpson\Gauss,Trapezodial, Simpson.rar" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Gauss Legendre Polynomial Rule, Trapezoidal Rule, Simpson's Rule</a>
+                <!-- <a href="assets\fortran\Vikash Meghwal\Lorenz system- The Butter fly effect_Vikash _Meghwal_R4.rar" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">R4 Method</a> -->
+              </p>
+                    <div class="list-group">
+                      <div class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1"></h5>
+                          <!-- <p>ButterFly</p> -->
+                          <!-- <small>08/30/2019 - 08/30/2020</small> -->
+                          <!-- <div class="blogcard  card-1 mb-4" style="width: 100%;"> -->
+                            <div class="card-body">
+                              <h6 class="card-title text-center" style="font-size:26px;font-weight:700;">Gauss Legendre Polynomial Rule, Trapezoidal Rule, Simpson's Rule</h6>
+                            </div> 
+                            <!-- </div> -->
+                          <!-- </div> -->
+                        </div>
+                              
+                                <!-- <img src="assets\fortran\Vikash Meghwal\plot1.png" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" alt="..."> -->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                  <iframe class="embed-responsive-item" src="assets\fortran\Gauss,Trapezodial, Simpson\VIKASH Meghwal Assignment 6 submission.pdf" width="100%" 100%, height="auto" allowfullscreen=""></iframe>
+                                </div>
+                            
+                        <p class="mb-1"> Gauss Legendre Polynomial Rule, For Trapezoidal Rule, and Simpson's Rule has been done for the some Specific function. where the attached PDF is for Gauss function which has been discussed.</p>
+                        <small></small>
+                      </div>
+                    </div>
+              </div>
+            
+          
+        
+            
+            
+              <div class="tab-pane overflow-auto" id="projects" role="tabpanel" >  
+                <p>
+                  <a herf=""><B>Undergraduate Research Project</B></a>
+
+    <div>
+                  <a href="https://drive.google.com/file/d/1O_WLOCjUrk2lxf8hoPudE72otImcrTfd/view" class="highlighted">Project 1</a>
+                  <a href="https://drive.google.com/file/d/1x3yjxiMS74zc-3abvyi9bHXHj0D-bBFf/view" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Slide 1</a>
+                  <p><i>Supervisor: Dr. Nagma Praveen Research Group, Chemical Biology (Bio-Nanoparticle Lab), Dept. of Chemistry, IIT Kanpur</i></p>
+                  <div class="media mt-2">
+                    <div class="media-body">
+                      <p>Objective: -Studying the SARS-CoV-2 fusion in detail using an opportunistic model for the fusing of the coronavirus
+                        membrane. -Receptor binding and priming of the spike protein of SARS-CoV-2 for membrane fusion.</p>
+    </div>
+                    </div>
+                  </div>
+    <div>
+                 <a href="https://home.iitk.ac.in/~psen/solution-chemistry.php" class="highlighted">Project 2</a>
+                 <!-- <a href="https://drive.google.com/file/d/1Z07siQkft9fcxqaNl3tsP0iKHGp1YJmu/view?usp=drive_link" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">POSTER</a> -->
+                 <p><i>Mentor Prof. Pratik Sen, Biophysical Chemistry Research Group, Dept. of Chemistry, IIT Kanpur</i></p>
+                 <div class="media mt-2">
+                   <div class="media-body">
+                     Title: Role of Hydrophobicity in Synergistic Solvation
+                     <p>Learning from lab: Purification of Organic Solvent, NMR Technique, Vacuum Distillation, Use of Lab Equipment</p>
+                   </div>
+                 </div>
+      </div>
+                </div>
+      </div>
+  </div>
+</div>
+
+
+
+<!-- ANIMATE.JS ANIMATE LIBRARY
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
+-->
+
+
+<!--JS FUNCTION FOR RECENT WORK SECTION -->
+<script>
+  $('#test-list a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+  })
+</script> 
+
+<!-- OPTIONAL TOAST JS FUNCTION-->
+<script>
+  $(document).ready(function() {
+      $(".toast").toast("show");
+  });
+</script>
+
+
+<script>
+$('body').scrollspy({ target: '#list-example' })
+</script>
+
+<script>
+$('.collapse').collapse()
+</script>
+
+<script>
+$('.show').show()
+</script>
+
+  </div>
+
+
+
+
+  <div class="dumbarton-spacer"></div>
+  <div class="navbar navbar-default navbar-fixed-bottom">
+<div class="container">
+  <p class="navbar-text pull-left">© 2023 - Vikash Meghwal,
+      <a href="https://github.com/mevikash" target="_blank" >GitHub</a>
+  </p>
+  <p class="navbar-text pull-right">
+
+
+    <div class="pagination">
+      <a href="AmVm/contact.html">&laquo;</a>
+      <a href="AmVm/vitae.html">1</a>
+      <a href="AmVm/contact.html">2</a>
+      <a class="active" href="#">Home</a>
+      <a href="AmVm/about.html">4</a>
+      <a href="AmVm/journey.html">5</a>
+      <a href="AmVm/blog.html">6</a>
+      <a href="AmVm/about.html">&raquo;</a>
+    </div>
+
+            <!-- Displays Social Media Icons based on _config.yml settings -->
+
+<span style="color: Black;">
+     
+  <a class="social-link" href="https://twitter.com/daneil_radcliff">
+        <span style="color: #000000;">
+            <i class="fab fa-twitter-square fa-lg"></i></a>
+        </span>
+    
+    
+        <a href="https://github.com/mevikash">
+        <span style="color: #000000;">
+            <i class="fab fa-github-square fa-lg"></i></a>
+        </span>
+    
+    
+        <a href="https://www.linkedin.com/in/vikash-meghwal/">
+        <span style="color: #000000;">
+            <i class="fab fa-linkedin fa-lg"></i></a>
+        </span>
+    
+    
+    
+        <a href="https://stackoverflow.com/users/15331943/mevikash">
+        <span style="color: #000000;">
+            <i class="fab fa-stack-overflow fa-lg"></i></a>
+        </span>
+
+        <a href="https://sites.google.com/view/mevikash/home">
+        <span style="color: #000;">
+            <i class="fab fa-google"></i></a>
+        </span>
+    
+        <a href="https://keybase.io/mevikash">
+        <span style="color: #000000;">
+            <i class="fab fa-keybase"></i></a>
+        </span>
+     
+    <i> &nbsp;&nbsp; </i>
+</span>
+
+    </p>
+  </div>
+</div> 
+
+<script>
+  ,$(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+</script>
+  </body>
 </html>
