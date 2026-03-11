@@ -1,436 +1,518 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
+<head>
   <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--
-  The above 2 meta tags *must* come first in the <head>
-  to consistently ensure proper document rendering.
-  Any other head element should come *after* these tags.
- -->
-<title>Vikash</title>
-<!-- Set the base URL for all relative URLs within the document -->
-<base href="#">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog &amp; Works — Vikash Meghwal</title>
+  <meta name="description" content="Publications, presentations and academic works by Vikash Meghwal">
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <meta name="referrer" content="no-referrer">
+  <meta name="format-detection" content="telephone=true">
+  <meta http-equiv="x-dns-prefetch-control" content="on">
 
-<!--
-  Allows control over where resources are loaded from.
-  Place as early in the <head> as possible, as the tag  
-  only applies to resources that are declared after it.
--->
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@400;700;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
-<!-- Short description of the document (limit to 150 characters) -->
-<!-- This content *may* be used as a part of search engine results. -->
-<meta name="description" content="a minimalistic jekyll theme for academics">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<!-- Control the behavior of search engine crawling and indexing -->
-<meta name="robots" content="index,follow"><!-- All Search Engines -->
-<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/32a2b2a489.js" crossorigin="anonymous"></script>
 
-<!-- Verify website ownership -->
-<meta name="google-site-verification" content=""><!-- Google Search Console -->
-<meta name="yandex-verification" content=""><!-- Yandex Webmasters -->
-<meta name="msvalidate.01" content=""><!-- Bing Webmaster Center -->
-<meta name="alexaVerifyID" content=""><!-- Alexa Console -->
-<meta name="p:domain_verify" content=""><!-- Pinterest Console-->
-<meta name="norton-safeweb-site-verification" content=""><!-- Norton Safe Web -->
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-<!-- Allows control over how referrer information is passed -->
-<meta name="referrer" content="no-referrer">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon-16x16.png">
 
-<!-- Disable automatic detection and formatting of possible phone numbers -->
-<meta name="format-detection" content="telephone=true">
+  <!-- jQuery + Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-<!-- Completely opt out of DNS prefetching by setting to "off" -->
-<meta http-equiv="x-dns-prefetch-control" content="on">
+  <style>
+    /* ── Base ── */
+    *, *::before, *::after { box-sizing: border-box; }
 
-<!-- Geo tags -->
-<!-- meta name="ICBM" content="latitude, longitude"-->
-<!-- meta name="geo.position" content="latitude;longitude"-->
-<!-- meta name="geo.region" content="country[-state]"><Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
-<!-- meta name="geo.placename" content="city/town"><eg. content="New York City" -->
-
-<!-- Link to an external CSS file -->
-<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Courgette&family=Lobster&family=Pacifico&family=Yellowtail&family=Noto+Sans+JP:wght@400;900&family=Poppins:wght@500&family=Righteous&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="/css/main.css">
-<!-- BootStrap CDN --> 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-<script src="https://kit.fontawesome.com/32a2b2a489.js" crossorigin="anonymous"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> 
-
-<!--  GIT TALK CDN  for comment system -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> 
-
-
-<!-- Provides information about an author or another person -->
-<link rel="me" href="mailto:developer.tbutler@gmail.com">
-<link rel="me" href="sms:+">
-
-<!-- Open Search -->
-<!-- link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title" -->
-
-<!-- Feeds -->
-<!-- link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS" -->
-<!-- link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3" -->
-
-<!-- For IE 10 and below -->
-<!-- Place favicon.ico in the root directory - no tag necessary -->
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon-16x16.png">
-<link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
-
-<meta property="fb:app_id" content="">
-<meta property="og:url" content="https://dumbarton.netlify.app/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Dumbarton, a minimalistic jekyll theme for academics">
-<meta property="og:image" content="/assets/img/dumbarton.png">
-<meta property="og:image:alt" content="A minimalistic jekyll theme for academic">
-<meta property="og:description" content="a minimalistic jekyll theme for academics">
-<meta property="og:site_name" content="Dumbarton">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@tbutler0x90">
-<meta name="twitter:creator" content="@tbutler0x90">
-<meta name="twitter:url" content="https://dumbarton.netlify.app/">
-<meta name="twitter:title" content="a minimalistic jekyll theme for academics">
-<meta name="twitter:description" content="a minimalistic jekyll theme for academics">
-<meta name="twitter:image" content="/assets/img/dumbarton.png">
-<meta name="twitter:image:alt" content="A minimalistic jekyll theme for academic">
-
-<!-- Used for adding in-document CSS -->
-
-
-
-<!-- JavaScript & No-JavaScript tags -->
-
-<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/styles/monokai-sublime.min.css">
-<script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/highlight.min.js"></script>
-<!-- and it's easy to individually load additional languages -->
-<script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/languages/go.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
-
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-<!--
-<script>
-    $(document).ready(function() {
-        $(".toast").toast('show');
-    });
-</script> -->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  'config'
-</script>
-<style>
-  .icon-bar {
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 20px;
-}
-
-.icon-bar a:hover {
-  background-color: #000;
-}
-
-.facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.google {
-  background: #dd4b39;
-  color: white;
-}
-
-.linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.content {
-  margin-left: 75px;
-  font-size: 30px;
-}
-  .pagination a {
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color .3s;
-  }
-  
-  .pagination a.active {
-    background-color: dodgerblue;
-    color: white;
-  }
-  .nav-item {
-        display: inline-block;
-        margin-right: 15px; /* Adjust the value to increase or decrease the gap */
+    body {
+      margin: 0;
+      font-family: 'Inter', 'Poppins', sans-serif;
+      background: #f4f6f9;
+      color: #1e2d3d;
     }
-    .nav-link {
-        font-family: Poppins;
-        color: #0000FF; /* Blue color */
-        text-decoration: none; /* Remove underline */
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: inherit; }
+
+    /* ── Navbar ── */
+    .site-nav {
+      background: #0d2229;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.35);
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-    .nav-link:hover {
-        color: #0000CC; /* Darker blue for hover effect */
+
+    .site-nav .brand {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: #14b8a6;
+      letter-spacing: 0.5px;
+      text-decoration: none;
     }
-  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+    .site-nav .nav-links {
+      display: flex;
+      gap: 1.75rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .site-nav .nav-links a {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 600;
+      font-size: 0.88rem;
+      color: #94a3b8;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      transition: color 0.2s;
+      text-decoration: none;
+    }
+
+    .site-nav .nav-links a:hover,
+    .site-nav .nav-links a.active {
+      color: #14b8a6;
+    }
+
+    /* ── Page Hero ── */
+    .page-hero {
+      background: linear-gradient(135deg, #0d2229 0%, #0f3443 60%, #14514a 100%);
+      padding: 4rem 0 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      height: 48px;
+      background: #f4f6f9;
+      clip-path: ellipse(55% 100% at 50% 100%);
+    }
+
+    .page-hero .hero-label {
+      display: inline-block;
+      background: rgba(20, 184, 166, 0.15);
+      color: #14b8a6;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 0.35rem 1rem;
+      border-radius: 50px;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(20, 184, 166, 0.3);
+    }
+
+    .page-hero h1 {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 900;
+      font-size: 2.6rem;
+      color: #f0fdfa;
+      margin: 0 0 0.75rem;
+      letter-spacing: -0.5px;
+    }
+
+    .page-hero p {
+      color: #94a3b8;
+      font-size: 1rem;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    /* ── Content wrapper ── */
+    .blog-wrapper {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+
+    /* ── Section divider ── */
+    .section-divider {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin: 2.5rem 0 1.25rem;
+    }
+
+    .section-divider span {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #64748b;
+      white-space: nowrap;
+    }
+
+    .section-divider::before,
+    .section-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #e2e8f0;
+    }
+
+    /* ── Work Card ── */
+    .work-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 1.4rem 1.6rem 1.2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #14b8a6;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04);
+      transition: transform 0.22s ease, box-shadow 0.22s ease;
+      position: relative;
+    }
+
+    .work-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 24px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .work-card .card-number {
+      position: absolute;
+      top: 1.3rem;
+      right: 1.4rem;
+      font-size: 2rem;
+      font-weight: 800;
+      color: #e2e8f0;
+      line-height: 1;
+      font-family: 'Inter', sans-serif;
+      user-select: none;
+    }
+
+    .work-card .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0f3443;
+      margin: 0 0 0.5rem;
+      line-height: 1.4;
+      padding-right: 3rem;
+    }
+
+    .work-card .card-title a {
+      color: #0f3443;
+      text-decoration: none;
+      transition: color 0.18s;
+    }
+
+    .work-card .card-title a:hover {
+      color: #14b8a6;
+    }
+
+    .work-card .card-desc {
+      font-size: 0.875rem;
+      color: #475569;
+      margin: 0.35rem 0 0.6rem;
+      line-height: 1.6;
+    }
+
+    .work-card .card-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.75rem;
+    }
+
+    .work-card .card-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 0.28rem 0.75rem;
+      border-radius: 50px;
+      background: rgba(20, 184, 166, 0.08);
+      color: #0f766e;
+      border: 1px solid rgba(20, 184, 166, 0.25);
+      text-decoration: none;
+      transition: background 0.18s, color 0.18s;
+    }
+
+    .work-card .card-links a:hover {
+      background: #14b8a6;
+      color: #fff;
+      border-color: #14b8a6;
+    }
+
+    .work-card .card-links a.alt {
+      background: rgba(99, 102, 241, 0.08);
+      color: #4f46e5;
+      border-color: rgba(99, 102, 241, 0.25);
+    }
+
+    .work-card .card-links a.alt:hover {
+      background: #4f46e5;
+      color: #fff;
+      border-color: #4f46e5;
+    }
+
+    /* ── Footer ── */
+    .site-footer {
+      background: #0d2229;
+      color: #64748b;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      font-size: 0.83rem;
+    }
+
+    .site-footer .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .site-footer .social-icons a {
+      color: #64748b;
+      font-size: 1.15rem;
+      transition: color 0.2s;
+    }
+
+    .site-footer .social-icons a:hover {
+      color: #14b8a6;
+    }
+
+    .site-footer a {
+      color: #14b8a6;
+      text-decoration: none;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .site-nav .nav-links { gap: 1rem; }
+      .page-hero h1 { font-size: 1.9rem; }
+      .work-card .card-number { display: none; }
+    }
   </style>
-  <body>
-    
-<nav class="navbar navbar-expand-lg glowing-border mb-4" style="font-family:Poppins;background-color:#10292e;">
-  <a class="navbar-brand" href="#"><h4 style="font-family:Noto Sans JP;font-weight:600;color:#149f98;">Vikash Meghwal</h4></a>
-    <ul class="navbar-nav mr-auto">
-        
-      <ul class="nav" style="padding: 0; list-style: none; margin: 0;">
-        <li class="nav-item">
-            <a href="about.html"style="font-family:Noto Sans JP;font-weight:600;color:#149f98;"  class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-            <a href="journey.html" style="font-family:Noto Sans JP;font-weight:600;color:#149f98;" class="nav-link">Journey</a>
-        </li>
-        <li class="nav-item">
-            <a href="blog.html" style="font-family:Noto Sans JP;font-weight:600;color:#149f98;" class="nav-link">Blog</a>
-        </li>
-        <li class="nav-item">
-            <a href="vitae.html" style="font-family:Noto Sans JP;font-weight:600;color:#149f98;" class="nav-link">Vitae</a>
-        </li>
-        <li class="nav-item">
-            <a href="contact.html" style="font-family:Noto Sans JP;font-weight:600;color:#149f98;" class="nav-link">Contact</a>
-        </li>
-    </ul>
+</head>
+<body>
 
-  </div>
+<!-- NAVBAR -->
+<nav class="site-nav">
+  <a class="brand" href="#">Vikash Meghwal</a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="journey.html">Journey</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+    <li><a href="vitae.html">Vitae</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 </nav>
-    <div class="container">
-      
-      <div class="card border-0">
-          <div class="card-body">
-            <p class="card-text">
-                <!-- Page Content -->
-  
-    <!-- Blog Entries Column -->
-      <div class="col-md-12">
-          
-          <div class="blogcard card-2 mb-4 mt-4" style="width: 100%;">
-            <h3><a href="https://drive.google.com/file/d/1Z07siQkft9fcxqaNl3tsP0iKHGp1YJmu/view?usp=sharing" class="nohighlight">SURGE Poster</a></h3>
-              <a href="https://drive.google.com/file/d/1lpNIAyR6mvB8sZXn-2Gh7PRRLiypmQvd/view?usp=sharing" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Report</a>  
-            <p>SURGE Internship 2023-24</p>
-            <p>Photos
-              <p><a href="https://drive.google.com/file/d/1wLIyi-6msscI3T3u-E5toYcEsSJuQBY1/view?usp=sharing">Certificate</a></p>
-            <p><a href="https://drive.google.com/file/d/1MeuqwIDSoyljZl-p-w9yQC5SNCfwmDbr/view?usp=sharing">Inaugural Event SURGE 1</a></p>
-            <p><a href="https://drive.google.com/file/d/1veZYnTvya-nSsIfiMEhDPwH1BeDoNAt2/view?usp=sharing">Inaugural Event SURGE 2</a></p>
-            </p> 
-            
-            <p><i></i></p>
-          </div>
 
-          <div class="blogcard card-2 mb-4 mt-4" style="width: 100%;">
-            <h3><a href="https://docs.google.com/presentation/d/1v4F04F7tTmwdJNzZd-zlVuFXvgNg7RIg/edit?usp=sharing&ouid=115257271775740582144&rtpof=true&sd=true" class="nohighlight">Class Presentation</a></h3>
-              <a href="https://drive.google.com/file/d/1yzu3L09EyY1-yGBmuqtCaV2ab3AVRuDT/view?usp=sharing" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">mevikash</a>  
-            <p>Click Chemistry</p>
-            <p><i></i></p>
-          </div>
+<!-- HERO -->
+<header class="page-hero animate__animated animate__fadeIn">
+  <div class="hero-label">Publications &amp; Works</div>
+  <h1>Blog &amp; Academic Works</h1>
+  <p>A curated collection of my presentations, research papers, case studies and academic contributions.</p>
+</header>
 
-          <div class="blogcard card-2 mb-4 mt-4" style="width: 100%;">
-            <h3><a href="https://drive.google.com/file/d/1d6LK45iOfONopj79fUbdkjuQ4KJ8yOXq/view?usp=sharing" class="nohighlight">Class Presentation</a></h3>
-              <a href="#" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">mevikash</a>  
-            <p>Multiselective Diels−Alder Reaction</p>
-            <p><i></i></p>
-          </div>
+<!-- CONTENT -->
+<main class="blog-wrapper">
 
-          <div class="blogcard card-2 mb-4 mt-4" style="width: 100%;">
-            <h3><a href="https://drive.google.com/file/d/1x3yjxiMS74zc-3abvyi9bHXHj0D-bBFf/view?usp=sharing" class="nohighlight">Presentation</a></h3>
-              <a href="https://drive.google.com/file/d/1xJEY4pl3veCG6DNRPJdP_45XeE9rgP4y/view?usp=sharing" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Transcript</a>  
-            <p>Coronavirus membrane fusion mechanism opportunistic model for SARS-CoV-2 fusion</p>
-            <p><i></i></p>
-          </div>
-          
-          <div class="blogcard card-2 mb-4 mt-4" style="width: 100%;">
-            <h3><a href="https://drive.google.com/file/d/1O_WLOCjUrk2lxf8hoPudE72otImcrTfd/view?usp=sharing" class="nohighlight">Presentation 2</a></h3>
-              <a href="https://drive.google.com/file/d/1LluaY4QOqQuOhODWMzu8n0AdDwGG6hEi/view?usp=sharing" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Transcript</a>  
-            <p>Coronavirus membrane fusion mechanism opportunistic model for SARS-CoV-2 fusion 2</p>
-            <p><i></i></p>
-          </div>
-          
-          <div class="blogcard card-2 mb-4 mt-4" style="width: 100%;">
-            <h3><a href="https://drive.google.com/file/d/1U-uMlOV2GcPrUTKijjUu1jI1wQxRQH8d/view?usp=sharing" class="nohighlight">Article on Yoga</a></h3>
-              <a href="#" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">mevikash</a>  
-            <p>ROLE OF YOGA IN WELL-BEING</p>
-            <p><i></i></p>
-          </div>
-          
-          <div class="blogcard card-2 mb-4 mt-4" style="width: 100%;">
-            <h3><a href="https://drive.google.com/file/d/1fNAZVpcoKxz6y9UwjaX5PGQAl5vu1Iua/view?usp=sharing" class="nohighlight">Review Paper </a></h3>
-              <a href="#" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">mevikash</a>  
-            <p>On a three-valued logical calculus and its
-              application to the analysis of the paradoxes of the
-              classical extended functional calculus</p>
-            <p><i></i></p>
-          </div>
-          
-          <div class="blogcard card-2 mb-4 mt-4" style="width: 100%;">
-            <h3><a href="https://drive.google.com/file/d/1-rWjdJyRdv_Cnosx4N4vXdQJbwIEeSzJ/view?usp=sharing" class="nohighlight"> Case Study on Surgical Blades </a></h3>
-              <a href="#" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">mevikash</a>  
-            <p>Introduction to Manufacturing Processes I</p>
-            <p><i></i></p>
-          </div>
-          
-          <div class="blogcard card-2 mb-4 mt-4" style="width: 100%;">
-            <h3><a href="https://drive.google.com/file/d/1ZLwd91RdZDWb0kXf6tTsiBvUPYSVMgIK/view?usp=sharing" class="nohighlight"> CANTILEVER TOOLBOX </a></h3>
-              <a href="#" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">mevikash</a>  
-            <p>Manufacturing CANTILEVER TOOLBOX</p>
-            <p><i></i></p>
-          </div>
-          
-          <div class="blogcard card-2 mb-4 mt-4" style="width: 100%;">
-            <h3><a href=https://drive.google.com/file/d/1uldI7T0c2rPG8zwJg4WraKde0dgL923m/view?usp=sharing" class="nohighlight"> Membranes and Lipids  </a></h3>
-              <a href="#" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">mevikash</a>  
-            <p>Introduction Of Membrane and Lipids
-            </p>
-            <p><i></i></p>
-          </div>
-          
-          <div class="blogcard card-2 mb-4 mt-4" style="width: 100%;">
-            <h3><a href="https://drive.google.com/file/d/1gIWcLkYkSmprgkvTt2jYEZ0IdJmtqYFj/view?usp=sharing" class="nohighlight"> TermPaper model  </a></h3>
-              <a href="#" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">mevikash</a>  
-            <p>Hemoglobin, carbonic Anhydrase, Tyrosinase, Catecol 1,2- dioxygenase, Non heme Fe(IV) oxo
-            </p>
-            <p><i></i></p>
-          </div>
+  <!-- RESEARCH & INTERNSHIP -->
+  <div class="section-divider"><span>Research &amp; Internship</span></div>
 
-          <div class="blogcard card-2 mb-4 mt-4" style="width: 100%;">
-            <h3><a href="assets\pdf\Peport_CHM621A.pdf" class="nohighlight"> CHM621 Chemical Bindings  </a></h3>
-              <a href="#" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">Quantum Entaglement</a>  
-            <p>Presentation 3 min.
-            </p>
-              <a href="assets\pdf\CHM621A___Presentation_Report_Vikash_Meghwal_19817966.pdf" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">mevikash</a>  
-            <p>Report of the Presentation
-            </p>
-              <a href="assets\pdf\Assignment of CHM621.pdf" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">mevikash</a>  
-            <p>Assignment 1
-            </p>
-            <p><i></i></p>
-          </div>
-          
-      
-      </div>
+  <div class="work-card animate__animated animate__fadeInUp">
+    <div class="card-number">01</div>
+    <h2 class="card-title">
+      <a href="https://drive.google.com/file/d/1Z07siQkft9fcxqaNl3tsP0iKHGp1YJmu/view?usp=sharing" target="_blank" rel="noopener">SURGE Poster</a>
+    </h2>
+    <p class="card-desc">SURGE Internship 2023-24</p>
+    <div class="card-links">
+      <a href="https://drive.google.com/file/d/1lpNIAyR6mvB8sZXn-2Gh7PRRLiypmQvd/view?usp=sharing" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Report</a>
+      <a href="https://drive.google.com/file/d/1wLIyi-6msscI3T3u-E5toYcEsSJuQBY1/view?usp=sharing" target="_blank" rel="noopener" class="alt"><i class="fas fa-certificate"></i> Certificate</a>
+      <a href="https://drive.google.com/file/d/1MeuqwIDSoyljZl-p-w9yQC5SNCfwmDbr/view?usp=sharing" target="_blank" rel="noopener" class="alt"><i class="fas fa-image"></i> Inaugural Event SURGE 1</a>
+      <a href="https://drive.google.com/file/d/1veZYnTvya-nSsIfiMEhDPwH1BeDoNAt2/view?usp=sharing" target="_blank" rel="noopener" class="alt"><i class="fas fa-image"></i> Inaugural Event SURGE 2</a>
     </div>
-  
-
-
-            </p>
-            
-              <!-- <p class="card-text"><small class="text-muted">This page was last updated at 2021-03-04 23:22.</small></p> -->
-            
-          </div>
-      </div>
-      
-    </div>
-    <div class="navbar navbar-default navbar-fixed-bottom">
-      <div class="container">
-        <p class="navbar-text pull-left">© 2023 - Vikash Meghwal,
-          <a href="https://github.com/mevikash" target="_blank" >GitHub</a>
-      </p>
-        <p class="navbar-text pull-right">
-          <div class="pagination">
-            <a href="/journey.html">&laquo;</a>
-        <a href="/AmVm">1</a>
-        <a href="AmVm/about.html">2</a>
-        <a href="AmVm/journey.html">3</a>
-        <!-- <a hAmVmref="/blog.html">4</a> -->
-        <a class="active" href="#">Blog</a>
-        <!-- <a hAmVmref="/vitae.html">5</a> -->
-        <a href="AmVm/contact.html">6</a>
-        <a href="AmVm/contact.html">&raquo;</a>
-          </div>
-                <!-- Displays Social Media Icons based on _config.yml settings -->
-    
-                <span style="color: Black;">
-
-                  <a class="social-link" href="https://twitter.com/daneil_radcliff">
-                    <span style="color: #000000;">
-                      <i class="fab fa-twitter-square fa-lg"></i></a>
-                </span>
-        
-        
-                <a href="https://github.com/mevikash">
-                  <span style="color: #000000;">
-                    <i class="fab fa-github-square fa-lg"></i></a>
-                </span>
-        
-        
-                <a href="https://www.linkedin.com/in/vikash-meghwal/">
-                  <span style="color: #000000;">
-                    <i class="fab fa-linkedin fa-lg"></i></a>
-                </span>
-        
-        
-        
-                <a href="https://stackoverflow.com/users/15331943/mevikash">
-                  <span style="color: #000000;">
-                    <i class="fab fa-stack-overflow fa-lg"></i></a>
-                </span>
-        
-        
-                <a href="https://sites.google.com/view/mevikash/home">
-                  <span style="color: #000000;">
-                      <i class="fab fa-google"></i></a>
-                  </span>
-        
-                <a href="https://keybase.io/mevikash">
-                  <span style="color: #000000;">
-                    <i class="fab fa-keybase"></i></a>
-                </span>
-        
-                <i> &nbsp;&nbsp; </i>
-                </span>
-
-    </p>
   </div>
-</div> 
+
+  <!-- CLASS PRESENTATIONS -->
+  <div class="section-divider"><span>Class Presentations</span></div>
+
+  <div class="work-card animate__animated animate__fadeInUp">
+    <div class="card-number">02</div>
+    <h2 class="card-title">
+      <a href="https://docs.google.com/presentation/d/1v4F04F7tTmwdJNzZd-zlVuFXvgNg7RIg/edit?usp=sharing&ouid=115257271775740582144&rtpof=true&sd=true" target="_blank" rel="noopener">Class Presentation</a>
+    </h2>
+    <p class="card-desc">Click Chemistry</p>
+    <div class="card-links">
+      <a href="https://drive.google.com/file/d/1yzu3L09EyY1-yGBmuqtCaV2ab3AVRuDT/view?usp=sharing" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> mevikash</a>
+    </div>
+  </div>
+
+  <div class="work-card animate__animated animate__fadeInUp">
+    <div class="card-number">03</div>
+    <h2 class="card-title">
+      <a href="https://drive.google.com/file/d/1d6LK45iOfONopj79fUbdkjuQ4KJ8yOXq/view?usp=sharing" target="_blank" rel="noopener">Class Presentation</a>
+    </h2>
+    <p class="card-desc">Multiselective Diels&#x2212;Alder Reaction</p>
+    <div class="card-links">
+      <a href="#"><i class="fas fa-user"></i> mevikash</a>
+    </div>
+  </div>
+
+  <!-- RESEARCH PRESENTATIONS -->
+  <div class="section-divider"><span>Research Presentations</span></div>
+
+  <div class="work-card animate__animated animate__fadeInUp">
+    <div class="card-number">04</div>
+    <h2 class="card-title">
+      <a href="https://drive.google.com/file/d/1x3yjxiMS74zc-3abvyi9bHXHj0D-bBFf/view?usp=sharing" target="_blank" rel="noopener">Presentation</a>
+    </h2>
+    <p class="card-desc">Coronavirus membrane fusion mechanism opportunistic model for SARS-CoV-2 fusion</p>
+    <div class="card-links">
+      <a href="https://drive.google.com/file/d/1xJEY4pl3veCG6DNRPJdP_45XeE9rgP4y/view?usp=sharing" target="_blank" rel="noopener" class="alt"><i class="fas fa-file-alt"></i> Transcript</a>
+    </div>
+  </div>
+
+  <div class="work-card animate__animated animate__fadeInUp">
+    <div class="card-number">05</div>
+    <h2 class="card-title">
+      <a href="https://drive.google.com/file/d/1O_WLOCjUrk2lxf8hoPudE72otImcrTfd/view?usp=sharing" target="_blank" rel="noopener">Presentation 2</a>
+    </h2>
+    <p class="card-desc">Coronavirus membrane fusion mechanism opportunistic model for SARS-CoV-2 fusion 2</p>
+    <div class="card-links">
+      <a href="https://drive.google.com/file/d/1LluaY4QOqQuOhODWMzu8n0AdDwGG6hEi/view?usp=sharing" target="_blank" rel="noopener" class="alt"><i class="fas fa-file-alt"></i> Transcript</a>
+    </div>
+  </div>
+
+  <!-- ARTICLES & PAPERS -->
+  <div class="section-divider"><span>Articles &amp; Papers</span></div>
+
+  <div class="work-card animate__animated animate__fadeInUp">
+    <div class="card-number">06</div>
+    <h2 class="card-title">
+      <a href="https://drive.google.com/file/d/1U-uMlOV2GcPrUTKijjUu1jI1wQxRQH8d/view?usp=sharing" target="_blank" rel="noopener">Article on Yoga</a>
+    </h2>
+    <p class="card-desc">ROLE OF YOGA IN WELL-BEING</p>
+    <div class="card-links">
+      <a href="#"><i class="fas fa-user"></i> mevikash</a>
+    </div>
+  </div>
+
+  <div class="work-card animate__animated animate__fadeInUp">
+    <div class="card-number">07</div>
+    <h2 class="card-title">
+      <a href="https://drive.google.com/file/d/1fNAZVpcoKxz6y9UwjaX5PGQAl5vu1Iua/view?usp=sharing" target="_blank" rel="noopener">Review Paper</a>
+    </h2>
+    <p class="card-desc">On a three-valued logical calculus and its application to the analysis of the paradoxes of the classical extended functional calculus</p>
+    <div class="card-links">
+      <a href="#"><i class="fas fa-user"></i> mevikash</a>
+    </div>
+  </div>
+
+  <!-- MANUFACTURING & ENGINEERING -->
+  <div class="section-divider"><span>Manufacturing &amp; Engineering</span></div>
+
+  <div class="work-card animate__animated animate__fadeInUp">
+    <div class="card-number">08</div>
+    <h2 class="card-title">
+      <a href="https://drive.google.com/file/d/1-rWjdJyRdv_Cnosx4N4vXdQJbwIEeSzJ/view?usp=sharing" target="_blank" rel="noopener">Case Study on Surgical Blades</a>
+    </h2>
+    <p class="card-desc">Introduction to Manufacturing Processes I</p>
+    <div class="card-links">
+      <a href="#"><i class="fas fa-user"></i> mevikash</a>
+    </div>
+  </div>
+
+  <div class="work-card animate__animated animate__fadeInUp">
+    <div class="card-number">09</div>
+    <h2 class="card-title">
+      <a href="https://drive.google.com/file/d/1ZLwd91RdZDWb0kXf6tTsiBvUPYSVMgIK/view?usp=sharing" target="_blank" rel="noopener">CANTILEVER TOOLBOX</a>
+    </h2>
+    <p class="card-desc">Manufacturing CANTILEVER TOOLBOX</p>
+    <div class="card-links">
+      <a href="#"><i class="fas fa-user"></i> mevikash</a>
+    </div>
+  </div>
+
+  <!-- BIOCHEMISTRY -->
+  <div class="section-divider"><span>Biochemistry</span></div>
+
+  <div class="work-card animate__animated animate__fadeInUp">
+    <div class="card-number">10</div>
+    <h2 class="card-title">
+      <a href="https://drive.google.com/file/d/1uldI7T0c2rPG8zwJg4WraKde0dgL923m/view?usp=sharing" target="_blank" rel="noopener">Membranes and Lipids</a>
+    </h2>
+    <p class="card-desc">Introduction Of Membrane and Lipids</p>
+    <div class="card-links">
+      <a href="#"><i class="fas fa-user"></i> mevikash</a>
+    </div>
+  </div>
+
+  <div class="work-card animate__animated animate__fadeInUp">
+    <div class="card-number">11</div>
+    <h2 class="card-title">
+      <a href="https://drive.google.com/file/d/1gIWcLkYkSmprgkvTt2jYEZ0IdJmtqYFj/view?usp=sharing" target="_blank" rel="noopener">TermPaper model</a>
+    </h2>
+    <p class="card-desc">Hemoglobin, carbonic Anhydrase, Tyrosinase, Catecol 1,2- dioxygenase, Non heme Fe(IV) oxo</p>
+    <div class="card-links">
+      <a href="#"><i class="fas fa-user"></i> mevikash</a>
+    </div>
+  </div>
+
+  <!-- CHEMISTRY -->
+  <div class="section-divider"><span>Chemistry</span></div>
+
+  <div class="work-card animate__animated animate__fadeInUp">
+    <div class="card-number">12</div>
+    <h2 class="card-title">
+      <a href="assets/pdf/Peport_CHM621A.pdf" target="_blank" rel="noopener">CHM621 Chemical Bindings</a>
+    </h2>
+    <p class="card-desc">Presentation 3 min.</p>
+    <div class="card-links">
+      <a href="#"><i class="fas fa-atom"></i> Quantum Entaglement</a>
+      <a href="assets/pdf/CHM621A___Presentation_Report_Vikash_Meghwal_19817966.pdf" target="_blank" rel="noopener" class="alt"><i class="fas fa-file-alt"></i> Report of the Presentation</a>
+      <a href="assets/pdf/Assignment of CHM621.pdf" target="_blank" rel="noopener" class="alt"><i class="fas fa-tasks"></i> Assignment 1</a>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="social-icons">
+    <a href="https://twitter.com/daneil_radcliff" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://github.com/mevikash" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/vikash-meghwal/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://stackoverflow.com/users/15331943/mevikash" target="_blank" rel="noopener" title="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
+    <a href="https://sites.google.com/view/mevikash/home" target="_blank" rel="noopener" title="Google Site"><i class="fab fa-google"></i></a>
+    <a href="https://keybase.io/mevikash" target="_blank" rel="noopener" title="Keybase"><i class="fab fa-keybase"></i></a>
+  </div>
+  <p>&copy; 2023 Vikash Meghwal &nbsp;&middot;&nbsp; <a href="https://github.com/mevikash" target="_blank" rel="noopener">GitHub</a></p>
+</footer>
 
 <script>
   $(function () {
-    $('[data-toggle="popover"]').popover()
-  })
+    $('[data-toggle="popover"]').popover();
+  });
 </script>
-  </body>
+</body>
 </html>
